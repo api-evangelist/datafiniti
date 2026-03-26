@@ -1,0 +1,92 @@
+aid: datafiniti
+name: Datafiniti
+description: >-
+  Datafiniti is a Data as a Service (DaaS) provider that collects, organizes,
+  and standardizes large-scale data from the public web, delivering
+  ready-to-use datasets for property, people, business, and product data
+  through their API, web portal, and bulk downloads.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Data Aggregation
+  - Business Data
+  - Product Data
+  - Property Data
+  - People Data
+  - Data as a Service
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/datafiniti/refs/heads/main/apis.yml
+created: '2026-03-26'
+modified: '2026-03-26'
+specificationVersion: '0.19'
+apis:
+  - aid: datafiniti:business-data-api
+    name: Datafiniti Business Data API
+    description: >-
+      Access a large catalog of business listings aggregated from hundreds
+      of online directories and review websites, integrated with
+      firmographics and reviews. Over 131 million business records available.
+    humanURL: https://www.datafiniti.co/data/business-data
+    tags:
+      - Business Data
+      - Firmographics
+      - Business Listings
+    properties:
+      - type: Documentation
+        url: https://developer.datafiniti.co
+  - aid: datafiniti:product-data-api
+    name: Datafiniti Product Data API
+    description: >-
+      Access millions of product records spanning major retailers, brands,
+      and categories including detailed product information, pricing data,
+      and reviews. Over 506 million product records available.
+    humanURL: https://www.datafiniti.co/data/product-data
+    tags:
+      - Product Data
+      - Pricing Data
+      - E-Commerce
+    properties:
+      - type: Documentation
+        url: https://developer.datafiniti.co/docs/getting-started-with-product-data
+  - aid: datafiniti:property-data-api
+    name: Datafiniti Property Data API
+    description: >-
+      Access a large catalog of real estate listings from dozens of websites,
+      integrated with pricing data, amenities, and reviews. Over 205 million
+      property records available.
+    humanURL: https://www.datafiniti.co/data/property-data
+    tags:
+      - Property Data
+      - Real Estate
+      - Listings
+    properties:
+      - type: Documentation
+        url: https://docs.datafiniti.co/docs/constructing-property-queries
+  - aid: datafiniti:people-data-api
+    name: Datafiniti People Data API
+    description: >-
+      Access people data records aggregated from public web sources. Over
+      4 million people records available.
+    humanURL: https://www.datafiniti.co/data/people-data
+    tags:
+      - People Data
+      - Contact Data
+    properties:
+      - type: Documentation
+        url: https://developer.datafiniti.co
+common:
+  - type: Website
+    url: https://www.datafiniti.co
+  - type: Documentation
+    url: https://docs.datafiniti.co/docs/api-introduction
+  - type: Developer Portal
+    url: https://developer.datafiniti.co
+  - type: Sign Up
+    url: https://portal.datafiniti.co/sign-up
+  - type: Login
+    url: https://portal.datafiniti.co
+  - type: Blog
+    url: https://blog.datafiniti.co
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
