@@ -8,12 +8,12 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Data Aggregation
   - Business Data
+  - Data Aggregation
+  - Data as a Service
+  - People Data
   - Product Data
   - Property Data
-  - People Data
-  - Data as a Service
 url: >-
   https://raw.githubusercontent.com/api-evangelist/datafiniti/refs/heads/main/apis.yml
 created: '2026-03-26'
@@ -29,8 +29,8 @@ apis:
     humanURL: https://www.datafiniti.co/data/business-data
     tags:
       - Business Data
-      - Firmographics
       - Business Listings
+      - Firmographics
     properties:
       - type: Documentation
         url: https://developer.datafiniti.co
@@ -42,9 +42,9 @@ apis:
       and reviews. Over 506 million product records available.
     humanURL: https://www.datafiniti.co/data/product-data
     tags:
-      - Product Data
-      - Pricing Data
       - E-Commerce
+      - Pricing Data
+      - Product Data
     properties:
       - type: Documentation
         url: https://developer.datafiniti.co/docs/getting-started-with-product-data
@@ -56,9 +56,9 @@ apis:
       property records available.
     humanURL: https://www.datafiniti.co/data/property-data
     tags:
+      - Listings
       - Property Data
       - Real Estate
-      - Listings
     properties:
       - type: Documentation
         url: https://docs.datafiniti.co/docs/constructing-property-queries
@@ -69,8 +69,8 @@ apis:
       4 million people records available.
     humanURL: https://www.datafiniti.co/data/people-data
     tags:
-      - People Data
       - Contact Data
+      - People Data
     properties:
       - type: Documentation
         url: https://developer.datafiniti.co
