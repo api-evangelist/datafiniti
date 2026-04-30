@@ -1,0 +1,43 @@
+name: Datafiniti Capabilities
+description: >-
+  Capabilities exposed across Datafiniti's Data-as-a-Service APIs for
+  business, product, property, and people data.
+capabilities:
+  - name: Authentication
+    description: Exchange email and password credentials for a bearer token via /v4/auth.
+    api: datafiniti:datafiniti-api
+  - name: Business Search
+    description: Query business records by query expression and named views.
+    api: datafiniti:business-data-api
+  - name: Product Search
+    description: Query product records across major retailers and brands.
+    api: datafiniti:product-data-api
+  - name: Property Search
+    description: Query real estate property records aggregated from listing sites.
+    api: datafiniti:property-data-api
+  - name: People Search
+    description: Query people records aggregated from public web sources.
+    api: datafiniti:people-data-api
+  - name: Bulk Download
+    description: Request bulk JSON or CSV downloads via the download flag.
+    api: datafiniti:datafiniti-api
+  - name: Enrichment
+    description: Augment customer datasets with additional Datafiniti attributes.
+    api: datafiniti:datafiniti-api
+  - name: Suppression
+    description: Remove outdated records from customer datasets.
+    api: datafiniti:datafiniti-api
+  - name: Real-time Requests
+    description: Fetch on-demand updates directly from source websites.
+    api: datafiniti:datafiniti-api
+use_cases:
+  - name: Lead generation
+    description: Source business leads with firmographics for sales outreach.
+  - name: Competitive product intelligence
+    description: Track product pricing, availability, and reviews across retailers.
+  - name: Real estate analytics
+    description: Power valuation models with deduplicated listing data.
+  - name: Identity resolution
+    description: Resolve people records across data sources for marketing or compliance.
+  - name: Dataset hygiene
+    description: Enrich and suppress customer datasets to keep records current.

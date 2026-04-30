@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/datafiniti/main/json-schema/search-request.json",
+  "title": "Datafiniti Search Request",
+  "type": "object",
+  "required": ["query"],
+  "properties": {
+    "query": {"type": "string", "description": "Datafiniti query expression filtering records."},
+    "num_records": {"type": "integer", "minimum": 1},
+    "download": {"type": "boolean"},
+    "format": {"type": "string", "enum": ["JSON", "CSV"]},
+    "view": {"type": "string"}
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "datafiniti": "https://docs.datafiniti.co/reference/",
+    "Business": {
+      "@id": "https://schema.org/LocalBusiness",
+      "@context": {
+        "id": "https://schema.org/identifier",
+        "name": "https://schema.org/name",
+        "address": "https://schema.org/address",
+        "categories": "https://schema.org/category",
+        "phones": "https://schema.org/telephone",
+        "websites": "https://schema.org/url",
+        "primaryCategories": "https://schema.org/category"
+      }
+    },
+    "Product": {
+      "@id": "https://schema.org/Product",
+      "@context": {
+        "id": "https://schema.org/identifier",
+        "name": "https://schema.org/name",
+        "brand": "https://schema.org/brand",
+        "categories": "https://schema.org/category",
+        "prices": "https://schema.org/offers",
+        "manufacturer": "https://schema.org/manufacturer",
+        "asins": "https://schema.org/sku",
+        "upc": "https://schema.org/gtin12"
+      }
+    },
+    "Property": {
+      "@id": "https://schema.org/RealEstateListing",
+      "@context": {
+        "id": "https://schema.org/identifier",
+        "address": "https://schema.org/address",
+        "geoLocation": "https://schema.org/geo",
+        "listingPrices": "https://schema.org/price",
+        "numBedroom": "https://schema.org/numberOfBedrooms",
+        "numBathroom": "https://schema.org/numberOfBathroomsTotal",
+        "lotSize": "https://schema.org/lotSize"
+      }
+    },
+    "Person": {
+      "@id": "https://schema.org/Person",
+      "@context": {
+        "id": "https://schema.org/identifier",
+        "name": "https://schema.org/name",
+        "emails": "https://schema.org/email",
+        "phones": "https://schema.org/telephone",
+        "addresses": "https://schema.org/address"
+      }
+    },
+    "SearchRequest": {
+      "@id": "datafiniti:search-and-downloads",
+      "@context": {
+        "query": "https://schema.org/query",
+        "num_records": "https://schema.org/numberOfItems",
+        "download": "https://schema.org/option",
+        "format": "https://schema.org/encodingFormat",
+        "view": "https://schema.org/view"
+      }
+    }
+  }
+}

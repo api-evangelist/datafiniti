@@ -1,0 +1,41 @@
+name: Datafiniti Vocabulary
+description: >-
+  Shared vocabulary of terms used across Datafiniti's Data-as-a-Service APIs
+  for business, product, property, and people datasets.
+terms:
+  - term: Record
+    definition: >-
+      A normalized data row in the Datafiniti catalog representing a single
+      entity such as a business, product, property, or person.
+  - term: Dataset
+    definition: >-
+      A category of records such as businesses, products, properties, or
+      people aggregated from the public web.
+  - term: Query
+    definition: >-
+      A Datafiniti search expression used to filter records by field
+      conditions and full-text terms.
+  - term: View
+    definition: >-
+      A named field projection that selects a subset of fields returned for
+      records.
+  - term: Download
+    definition: >-
+      A bulk asynchronous export of all records matching a query, returned
+      as a downloadable file.
+  - term: Enrichment
+    definition: >-
+      A process that augments existing records with additional Datafiniti
+      attributes.
+  - term: Suppression
+    definition: >-
+      A process that removes outdated or invalid records from a customer
+      dataset.
+  - term: Real-time Request
+    definition: >-
+      An on-demand fetch that retrieves the latest data directly from
+      source websites for a record.
+  - term: Token
+    definition: >-
+      A bearer credential issued by /v4/auth and required on every
+      Datafiniti API call.

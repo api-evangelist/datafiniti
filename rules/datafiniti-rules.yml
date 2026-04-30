@@ -1,0 +1,40 @@
+extends:
+  - spectral:oas
+rules:
+  datafiniti-server-base:
+    description: Servers must point at api.datafiniti.co with a /v4 base path.
+    given: $.servers[*].url
+    severity: error
+    then:
+      function: pattern
+      functionOptions:
+        match: "https://api\\.datafiniti\\.co/v4"
+  datafiniti-bearer-auth:
+    description: Operations must use bearer auth except the auth endpoint.
+    given: $.components.securitySchemes.bearerAuth
+    severity: error
+    then:
+      field: scheme
+      function: pattern
+      functionOptions:
+        match: "^bearer$"
+  datafiniti-search-method-post:
+    description: Search endpoints must use POST.
+    given: $.paths[?(@property.match(/search$/))]
+    severity: error
+    then:
+      function: truthy
+  datafiniti-operation-tags:
+    description: Every operation must declare a tag.
+    given: $.paths[*][*]
+    severity: error
+    then:
+      field: tags
+      function: truthy
+  datafiniti-num-records-min:
+    description: SearchRequest num_records minimum must be 1.
+    given: $.components.schemas.SearchRequest.properties.num_records
+    severity: warn
+    then:
+      field: minimum
+      function: truthy

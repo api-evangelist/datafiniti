@@ -1,0 +1,179 @@
+openapi: 3.1.0
+info:
+  title: Datafiniti API
+  description: >-
+    The Datafiniti API exposes Data-as-a-Service endpoints for searching and
+    downloading business, product, property, and people datasets aggregated
+    from the public web. Authentication uses bearer tokens issued by the
+    /v4/auth endpoint.
+  version: 4.0.0
+  contact:
+    name: Datafiniti
+    url: https://www.datafiniti.co
+servers:
+  - url: https://api.datafiniti.co/v4
+    description: Datafiniti production API
+security:
+  - bearerAuth: []
+tags:
+  - name: Authentication
+  - name: Businesses
+  - name: People
+  - name: Products
+  - name: Properties
+paths:
+  /auth:
+    post:
+      operationId: authenticate
+      summary: Issue a bearer token
+      description: Exchange email and password credentials for a bearer token used by all other endpoints.
+      tags: [Authentication]
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AuthRequest'
+      responses:
+        '200':
+          description: Token issued
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+  /businesses/search:
+    post:
+      operationId: searchBusinesses
+      summary: Search business records
+      description: >-
+        Search the business dataset. Returns up to 10 matching records, or a
+        bulk download when download true is set in the request body.
+      tags: [Businesses]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SearchRequest'
+      responses:
+        '200':
+          description: Matching records or download metadata
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SearchResponse'
+  /people/search:
+    post:
+      operationId: searchPeople
+      summary: Search people records
+      tags: [People]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SearchRequest'
+      responses:
+        '200':
+          description: Matching records or download metadata
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SearchResponse'
+  /products/search:
+    post:
+      operationId: searchProducts
+      summary: Search product records
+      tags: [Products]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SearchRequest'
+      responses:
+        '200':
+          description: Matching records or download metadata
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SearchResponse'
+  /properties/search:
+    post:
+      operationId: searchProperties
+      summary: Search property records
+      tags: [Properties]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SearchRequest'
+      responses:
+        '200':
+          description: Matching records or download metadata
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SearchResponse'
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    AuthRequest:
+      type: object
+      required: [email, password]
+      properties:
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+          format: password
+    AuthResponse:
+      type: object
+      required: [token]
+      properties:
+        token:
+          type: string
+    SearchRequest:
+      type: object
+      required: [query]
+      properties:
+        query:
+          type: string
+          description: Datafiniti query expression filtering records.
+        num_records:
+          type: integer
+          description: Maximum number of records returned in a download.
+          minimum: 1
+        download:
+          type: boolean
+          description: When true, request a bulk download of all matching records.
+        format:
+          type: string
+          description: Bulk download format such as JSON or CSV.
+          enum: [JSON, CSV]
+        view:
+          type: string
+          description: Named view selecting a subset of fields.
+    SearchResponse:
+      type: object
+      properties:
+        num_found:
+          type: integer
+        num_records:
+          type: integer
+        records:
+          type: array
+          items:
+            type: object
+        download_id:
+          type: string
+        download_url:
+          type: string
+          format: uri

@@ -17,15 +17,37 @@ tags:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/datafiniti/refs/heads/main/apis.yml
 created: '2026-03-26'
-modified: '2026-03-26'
+modified: '2026-04-28'
 specificationVersion: '0.19'
+xType: company
+position: Consumer
+access: 3rd-Party
 apis:
+  - aid: datafiniti:datafiniti-api
+    name: Datafiniti API
+    description: >-
+      Unified Datafiniti REST API exposing search and download endpoints for
+      businesses, products, properties, and people datasets, plus the bearer
+      token authentication endpoint.
+    humanURL: https://docs.datafiniti.co/docs/api-introduction
+    baseURL: https://api.datafiniti.co/v4
+    tags:
+      - Authentication
+      - Bulk Downloads
+      - Search
+    properties:
+      - type: Documentation
+        url: https://docs.datafiniti.co/docs/api-introduction
+      - type: OpenAPI
+        url: openapi/datafiniti-api.yml
+      - type: JSONSchema
+        url: json-schema/search-request.json
   - aid: datafiniti:business-data-api
     name: Datafiniti Business Data API
     description: >-
-      Access a large catalog of business listings aggregated from hundreds
-      of online directories and review websites, integrated with
-      firmographics and reviews. Over 131 million business records available.
+      Access a large catalog of business listings aggregated from hundreds of
+      online directories and review websites, integrated with firmographics
+      and reviews. Over 131 million business records available.
     humanURL: https://www.datafiniti.co/data/business-data
     tags:
       - Business Data
@@ -87,6 +109,14 @@ common:
     url: https://portal.datafiniti.co
   - type: Blog
     url: https://blog.datafiniti.co
+  - type: JSON-LD
+    url: json-ld/datafiniti-context.jsonld
+  - type: Vocabulary
+    url: vocabulary/datafiniti-vocabulary.yml
+  - type: Capabilities
+    url: capabilities/datafiniti-capabilities.yml
+  - type: Rules
+    url: rules/datafiniti-rules.yml
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
