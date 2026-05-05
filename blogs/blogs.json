@@ -1,0 +1,13 @@
+{
+  "repo": "datafiniti",
+  "feeds": [
+    {
+      "source": "https://blog.datafiniti.co",
+      "feed_url": "https://blog.datafiniti.co/feed",
+      "saved": 10,
+      "title": "Knowledge from Data: The Datafiniti Blog - Medium"
+    }
+  ],
+  "post_count": 10,
+  "fetched": "2026-05-03T23:26:54Z"
+}
