@@ -1,5 +1,6 @@
 specification: FinOps Framework
 specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
 alignedWith:
   framework: FinOps Foundation Framework
   frameworkUrl: https://www.finops.org/framework/
@@ -8,157 +9,83 @@ alignedWith:
   dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
 provider: Datafiniti
 providerId: datafiniti
-publisherName: Datafiniti
-serviceCategory: API
+publisherName: Datafiniti, LLC
+serviceCategory: Data as a Service
 created: '2026-05-04'
-modified: '2026-05-04'
+modified: '2026-05-05'
+reconciled: false
 tags:
   - Business Data
-  - Data Aggregation
   - Data as a Service
-  - People Data
-  - Product Data
-  - Property Data
   - FinOps
-  - Cost Management
   - FOCUS
-description: FinOps framework definition for the Datafiniti API surface. Provides a FOCUS-aligned mapping
-  for cost allocation, usage measurement, and unit-economics reporting across the provider's APIs.
-principles:
-  - name: Visibility
-    description: Make API consumption costs visible to engineering, product, and finance teams in near
-      real-time.
-  - name: Allocation
-    description: Tag every chargeable API call with the consuming team, environment, application, and
-      feature so cost can be allocated.
-  - name: Optimization
-    description: Continuously evaluate request patterns, caching, batching, and tier selection to reduce
-      cost per useful unit of work.
-  - name: Accountability
-    description: Establish budget owners and chargeback or showback flows for each consuming team.
-domains:
-  - name: Understand Usage and Cost
-    capabilities:
-      - Data Ingestion
-      - Allocation
-      - Reporting and Analytics
-      - Anomaly Management
-  - name: Quantify Business Value
-    capabilities:
-      - Planning and Estimating
-      - Forecasting
-      - Budgeting
-      - Benchmarking
-      - Unit Economics
-  - name: Optimize Usage and Cost
-    capabilities:
-      - Architecting for Cloud
-      - Rate Optimization
-      - Workload Optimization
-      - Cloud Sustainability
-      - Licensing and SaaS
-  - name: Manage the FinOps Practice
-    capabilities:
-      - FinOps Practice Operations
-      - FinOps Education and Enablement
-      - Invoicing and Chargeback
-      - Onboarding Workloads
-      - Intersecting Disciplines
+description: 'FOCUS-aligned FinOps for Datafiniti: subscription billing scaled by record volume
+  across four data products (Property, People, Business, Product). The primary billable unit is a
+  delivered record. Specific per-record rates are gated behind portal sign-up.'
+sources:
+  - https://datafiniti.co
+  - https://portal.datafiniti.co
+notes: No public per-unit pricing; reconciled false. Meter shape is correct (records-as-unit) but
+  the dollar values must be sourced from the customer's portal.
 billingModel:
-  pricingCategory: Usage-Based
+  pricingCategory: Subscription + Usage
   billingFrequency: Monthly
   billingCurrency: USD
   chargeCategories:
     - Usage
     - Purchase
-    - Tax
-    - Credit
     - Adjustment
-  chargeFrequency: Recurring
 focusColumns:
   ServiceName: Datafiniti
-  ServiceCategory: Developer Tools / API
+  ServiceCategory: Data as a Service
+  ServiceSubcategory: Web Data Aggregation
   ProviderName: Datafiniti
-  PublisherName: Datafiniti
-  InvoiceIssuerName: Datafiniti
-  PricingCategory: Usage-Based
-  PricingUnit: request
+  PublisherName: Datafiniti, LLC
+  InvoiceIssuerName: Datafiniti, LLC
+  PricingCategory: Subscription + Usage
+  PricingUnit: record
   BillingCurrency: USD
   ChargeCategory: Usage
 meters:
+  - name: records_delivered
+    description: Count of unique records returned via search, download, or bulk export. The primary
+      billable line.
+    unit: record
+    aggregation: sum
+    dimensions:
+      - dataset
+      - api_key
+      - consumer
   - name: api_requests
-    description: Count of billable API requests
+    description: Count of API requests issued against the search and download endpoints.
     unit: request
-    aggregation: sum
+    aggregation: count
     dimensions:
-      - api
       - endpoint
-      - tier
-      - region
-      - consumer
-  - name: data_egress
-    description: Bytes returned over the network in API responses
-    unit: GB
-    aggregation: sum
+      - api_key
+  - name: bulk_downloads
+    description: Bulk download exports requested through the portal or API.
+    unit: download
+    aggregation: count
     dimensions:
-      - api
-      - region
-      - consumer
-  - name: compute_seconds
-    description: Server-side compute consumed by the request, where applicable
-    unit: second
-    aggregation: sum
-    dimensions:
-      - api
-      - endpoint
-      - tier
-apis:
-  - name: Datafiniti API
-    baseURL: https://api.datafiniti.co/v4
-    tags:
-      - Authentication
-      - Bulk Downloads
-      - Search
-    serviceName: Datafiniti API
-    serviceCategory: API
-  - name: Datafiniti Business Data API
-    baseURL: ''
-    tags:
-      - Business Data
-      - Business Listings
-      - Firmographics
-    serviceName: Datafiniti Business Data API
-    serviceCategory: API
-  - name: Datafiniti Product Data API
-    baseURL: ''
-    tags:
-      - E-Commerce
-      - Pricing Data
-      - Product Data
-    serviceName: Datafiniti Product Data API
-    serviceCategory: API
-  - name: Datafiniti Property Data API
-    baseURL: ''
-    tags:
-      - Listings
-      - Property Data
-      - Real Estate
-    serviceName: Datafiniti Property Data API
-    serviceCategory: API
-  - name: Datafiniti People Data API
-    baseURL: ''
-    tags:
-      - Contact Data
-      - People Data
-    serviceName: Datafiniti People Data API
-    serviceCategory: API
-unitEconomics:
-  - name: Cost per 1K Requests
-    metric: billed_cost / (api_requests / 1000)
-    target: TBD
-  - name: Cost per Active Consumer
-    metric: billed_cost / active_consumers
-    target: TBD
+      - dataset
+      - api_key
+principles:
+  - name: Visibility
+    description: Use the Datafiniti portal usage dashboard plus per-response record counts to track
+      consumption. Aggregate API responses into internal observability since record volume drives
+      cost.
+  - name: Allocation
+    description: Issue separate API keys per consuming product or team so record consumption can
+      be sliced. Datafiniti does not provide cost-allocation tags natively.
+  - name: Optimization
+    description: Filter aggressively server-side, request only required fields, and prefer search
+      over download for exploration so you do not pay for records you do not retain. Cache stable
+      records locally to avoid re-pulling.
+  - name: Accountability
+    description: Set monthly record-budget alerts in the portal, designate a budget owner per
+      dataset, and review consumption against business-value metrics (records-converted-to-leads,
+      records-per-listing).
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
