@@ -19,7 +19,7 @@ url: >-
 created: '2026-03-26'
 modified: '2026-04-28'
 specificationVersion: '0.19'
-xType: company
+kind: company
 position: Consumer
 access: 3rd-Party
 apis:
@@ -103,13 +103,13 @@ common:
     url: https://docs.datafiniti.co/docs/api-introduction
   - type: Developer Portal
     url: https://developer.datafiniti.co
-  - type: Sign Up
+  - type: SignUp
     url: https://portal.datafiniti.co/sign-up
   - type: Login
     url: https://portal.datafiniti.co
   - type: Blog
     url: https://blog.datafiniti.co
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/datafiniti-context.jsonld
   - type: Vocabulary
     url: vocabulary/datafiniti-vocabulary.yml
