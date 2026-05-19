@@ -1,0 +1,80 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Datafiniti API — Businesses
+  description: 'Datafiniti API — Businesses. 1 operations. Lead operation: Search business records. Self-contained Naftiko
+    capability covering one Datafiniti business surface.'
+  tags:
+  - Datafiniti
+  - Businesses
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    DATAFINITI_API_KEY: DATAFINITI_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: datafiniti-businesses
+    baseUri: https://api.datafiniti.co/v4
+    description: Datafiniti API — Businesses business capability. Self-contained, no shared references.
+    resources:
+    - name: businesses-search
+      path: /businesses/search
+      operations:
+      - name: searchbusinesses
+        method: POST
+        description: Search business records
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    authentication:
+      type: bearer
+      token: '{{env.DATAFINITI_API_KEY}}'
+  exposes:
+  - type: rest
+    namespace: datafiniti-businesses-rest
+    port: 8080
+    description: REST adapter for Datafiniti API — Businesses. One Spectral-compliant resource per consumed operation, prefixed
+      with /v1.
+    resources:
+    - path: /v1/businesses/search
+      name: businesses-search
+      description: REST surface for businesses-search.
+      operations:
+      - method: POST
+        name: searchbusinesses
+        description: Search business records
+        call: datafiniti-businesses.searchbusinesses
+        with:
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: datafiniti-businesses-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Datafiniti API — Businesses. One tool per consumed operation, routed inline through this
+      capability's consumes block.
+    tools:
+    - name: search-business-records
+      description: Search business records
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: datafiniti-businesses.searchbusinesses
+      with:
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
