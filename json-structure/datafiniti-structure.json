@@ -1,0 +1,88 @@
+{
+  "provider": "Datafiniti",
+  "providerId": "datafiniti",
+  "kind": "json-structure",
+  "description": "Structural overview of the Datafiniti API surface; extracted from openapi/.",
+  "schemaCount": 4,
+  "operationCount": 5,
+  "schemas": [
+    {
+      "name": "AuthRequest",
+      "type": "object",
+      "propertyCount": 2,
+      "required": [
+        "email",
+        "password"
+      ]
+    },
+    {
+      "name": "AuthResponse",
+      "type": "object",
+      "propertyCount": 1,
+      "required": [
+        "token"
+      ]
+    },
+    {
+      "name": "SearchRequest",
+      "type": "object",
+      "propertyCount": 5,
+      "required": [
+        "query"
+      ]
+    },
+    {
+      "name": "SearchResponse",
+      "type": "object",
+      "propertyCount": 5,
+      "required": []
+    }
+  ],
+  "operations": [
+    {
+      "method": "POST",
+      "path": "/auth",
+      "operationId": "authenticate",
+      "summary": "Issue a bearer token",
+      "tags": [
+        "Authentication"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/businesses/search",
+      "operationId": "searchBusinesses",
+      "summary": "Search business records",
+      "tags": [
+        "Businesses"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/people/search",
+      "operationId": "searchPeople",
+      "summary": "Search people records",
+      "tags": [
+        "People"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/products/search",
+      "operationId": "searchProducts",
+      "summary": "Search product records",
+      "tags": [
+        "Products"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/properties/search",
+      "operationId": "searchProperties",
+      "summary": "Search property records",
+      "tags": [
+        "Properties"
+      ]
+    }
+  ]
+}

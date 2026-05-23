@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "#/components/schemas/AuthRequest",
+  "title": "AuthRequest",
+  "type": "object",
+  "required": [
+    "email",
+    "password"
+  ],
+  "properties": {
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "password": {
+      "type": "string",
+      "format": "password"
+    }
+  }
+}

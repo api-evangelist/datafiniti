@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "#/components/schemas/SearchRequest",
+  "title": "SearchRequest",
+  "type": "object",
+  "required": [
+    "query"
+  ],
+  "properties": {
+    "query": {
+      "type": "string",
+      "description": "Datafiniti query expression filtering records."
+    },
+    "num_records": {
+      "type": "integer",
+      "description": "Maximum number of records returned in a download.",
+      "minimum": 1
+    },
+    "download": {
+      "type": "boolean",
+      "description": "When true, request a bulk download of all matching records."
+    },
+    "format": {
+      "type": "string",
+      "description": "Bulk download format such as JSON or CSV.",
+      "enum": [
+        "JSON",
+        "CSV"
+      ]
+    },
+    "view": {
+      "type": "string",
+      "description": "Named view selecting a subset of fields."
+    }
+  }
+}

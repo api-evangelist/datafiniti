@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "#/components/schemas/SearchResponse",
+  "title": "SearchResponse",
+  "type": "object",
+  "properties": {
+    "num_found": {
+      "type": "integer"
+    },
+    "num_records": {
+      "type": "integer"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "download_id": {
+      "type": "string"
+    },
+    "download_url": {
+      "type": "string",
+      "format": "uri"
+    }
+  }
+}
