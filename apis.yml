@@ -118,6 +118,8 @@ common:
     url: capabilities/datafiniti-capabilities.yml
   - type: Rules
     url: rules/datafiniti-rules.yml
+  - type: LLMsTxt
+    url: https://docs.datafiniti.co/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
