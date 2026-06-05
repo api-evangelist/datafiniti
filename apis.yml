@@ -1,8 +1,9 @@
 aid: datafiniti
 name: Datafiniti
-description: Datafiniti is a Data as a Service (DaaS) provider that collects, organizes, and standardizes large-scale data
-  from the public web, delivering ready-to-use datasets for property, people, business, and product data through their API,
-  web portal, and bulk downloads.
+description: >-
+  Datafiniti is a Data as a Service (DaaS) provider that collects, organizes, and standardizes large-scale data from the
+  public web, delivering ready-to-use datasets for property, people, business, and product data through their API, web
+  portal, and bulk downloads.
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
@@ -22,77 +23,71 @@ access: 3rd-Party
 apis:
   - aid: datafiniti:datafiniti-api
     name: Datafiniti API
-    description: Unified Datafiniti REST API exposing search and download endpoints for businesses, products, properties, and
+    description: >-
+      Unified Datafiniti REST API exposing search and download endpoints for businesses, products, properties, and
       people datasets, plus the bearer token authentication endpoint.
     humanURL: https://docs.datafiniti.co/docs/api-introduction
     baseURL: https://api.datafiniti.co/v4
     tags:
-    - Authentication
-    - Bulk Downloads
-    - Search
+      - Authentication
+      - Bulk Downloads
+      - Search
     properties:
-    - type: Documentation
-      url: https://docs.datafiniti.co/docs/api-introduction
-    - type: OpenAPI
-      url: openapi/datafiniti-api.yml
-    - type: JSONSchema
-      url: json-schema/search-request.json
-    - type: NaftikoCapability
-      url: capabilities/datafiniti-authentication.yaml
-    - type: NaftikoCapability
-      url: capabilities/datafiniti-businesses.yaml
-    - type: NaftikoCapability
-      url: capabilities/datafiniti-people.yaml
-    - type: NaftikoCapability
-      url: capabilities/datafiniti-products.yaml
-    - type: NaftikoCapability
-      url: capabilities/datafiniti-properties.yaml
+      - type: Documentation
+        url: https://docs.datafiniti.co/docs/api-introduction
+      - type: OpenAPI
+        url: openapi/datafiniti-api.yml
+      - type: JSONSchema
+        url: json-schema/search-request.json
   - aid: datafiniti:business-data-api
     name: Datafiniti Business Data API
-    description: Access a large catalog of business listings aggregated from hundreds of online directories and review websites,
+    description: >-
+      Access a large catalog of business listings aggregated from hundreds of online directories and review websites,
       integrated with firmographics and reviews. Over 131 million business records available.
     humanURL: https://www.datafiniti.co/data/business-data
     tags:
-    - Business Data
-    - Business Listings
-    - Firmographics
+      - Business Data
+      - Business Listings
+      - Firmographics
     properties:
-    - type: Documentation
-      url: https://developer.datafiniti.co
+      - type: Documentation
+        url: https://developer.datafiniti.co
   - aid: datafiniti:product-data-api
     name: Datafiniti Product Data API
-    description: Access millions of product records spanning major retailers, brands, and categories including detailed product
+    description: >-
+      Access millions of product records spanning major retailers, brands, and categories including detailed product
       information, pricing data, and reviews. Over 506 million product records available.
     humanURL: https://www.datafiniti.co/data/product-data
     tags:
-    - E-Commerce
-    - Pricing Data
-    - Product Data
+      - E-Commerce
+      - Pricing Data
+      - Product Data
     properties:
-    - type: Documentation
-      url: https://developer.datafiniti.co/docs/getting-started-with-product-data
+      - type: Documentation
+        url: https://developer.datafiniti.co/docs/getting-started-with-product-data
   - aid: datafiniti:property-data-api
     name: Datafiniti Property Data API
-    description: Access a large catalog of real estate listings from dozens of websites, integrated with pricing data, amenities,
+    description: >-
+      Access a large catalog of real estate listings from dozens of websites, integrated with pricing data, amenities,
       and reviews. Over 205 million property records available.
     humanURL: https://www.datafiniti.co/data/property-data
     tags:
-    - Listings
-    - Property Data
-    - Real Estate
+      - Listings
+      - Property Data
+      - Real Estate
     properties:
-    - type: Documentation
-      url: https://docs.datafiniti.co/docs/constructing-property-queries
+      - type: Documentation
+        url: https://docs.datafiniti.co/docs/constructing-property-queries
   - aid: datafiniti:people-data-api
     name: Datafiniti People Data API
     description: Access people data records aggregated from public web sources. Over 4 million people records available.
     humanURL: https://www.datafiniti.co/data/people-data
     tags:
-    - Contact Data
-    - People Data
+      - Contact Data
+      - People Data
     properties:
-    - type: Documentation
-      url: https://developer.datafiniti.co
+      - type: Documentation
+        url: https://developer.datafiniti.co
 common:
   - type: GitHubOrganization
     url: https://github.com/datafiniti
