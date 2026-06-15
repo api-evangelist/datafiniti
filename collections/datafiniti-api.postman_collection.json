@@ -1,0 +1,579 @@
+{
+  "item": [
+    {
+      "id": "66d90c48-7a9f-4309-a376-b1342e1ce87a",
+      "name": "Authentication",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "1832de18-8b94-479a-9796-4f6d9dc45ed1",
+          "name": "Issue a bearer token",
+          "request": {
+            "name": "Issue a bearer token",
+            "description": {
+              "content": "Exchange email and password credentials for a bearer token used by all other endpoints.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "auth"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"<email>\",\n  \"password\": \"<password>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "c3f06a28-a9c5-43b6-96d7-b02a6b95376f",
+              "name": "Token issued",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "auth"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"email\": \"<email>\",\n  \"password\": \"<password>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"token\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "6148d88c-3e4a-4e14-8f2d-503213248921",
+      "name": "Businesses",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "8c38e978-e12c-4068-b882-bb74429fd584",
+          "name": "Search business records",
+          "request": {
+            "name": "Search business records",
+            "description": {
+              "content": "Search the business dataset. Returns up to 10 matching records, or a bulk download when download true is set in the request body.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "businesses",
+                "search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"<string>\",\n  \"num_records\": \"<integer>\",\n  \"download\": \"<boolean>\",\n  \"format\": \"<string>\",\n  \"view\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "68f1a682-cc67-4929-9df5-9bf81d079a1d",
+              "name": "Matching records or download metadata",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "businesses",
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"query\": \"<string>\",\n  \"num_records\": \"<integer>\",\n  \"download\": \"<boolean>\",\n  \"format\": \"<string>\",\n  \"view\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"num_found\": 496,\n  \"num_records\": 9517,\n  \"download_id\": \"string\",\n  \"download_url\": \"http://QytYbqvTGsICTWCcPxmElPVbNgzIkzrKI.qpuknSnwjL197t2WK2juu,6hXB9HdT7yjHTQpjrRePXwT82Ti9\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "8d882d49-ac1a-4bdd-9ceb-1f288022aa04",
+      "name": "People",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "b249f8f3-5bb6-4aa7-8df9-b50ebc5c82af",
+          "name": "Search people records",
+          "request": {
+            "name": "Search people records",
+            "description": {},
+            "url": {
+              "path": [
+                "people",
+                "search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"<string>\",\n  \"num_records\": \"<integer>\",\n  \"download\": \"<boolean>\",\n  \"format\": \"<string>\",\n  \"view\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "3a9092d3-7331-4b74-ab2a-45bddf826ec7",
+              "name": "Matching records or download metadata",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "people",
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"query\": \"<string>\",\n  \"num_records\": \"<integer>\",\n  \"download\": \"<boolean>\",\n  \"format\": \"<string>\",\n  \"view\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"num_found\": 496,\n  \"num_records\": 9517,\n  \"download_id\": \"string\",\n  \"download_url\": \"http://QytYbqvTGsICTWCcPxmElPVbNgzIkzrKI.qpuknSnwjL197t2WK2juu,6hXB9HdT7yjHTQpjrRePXwT82Ti9\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "d644b0ec-44e3-40f1-be44-44a16cde571a",
+      "name": "Products",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "aac57d36-27d6-4733-8f1f-70772ff4cd1b",
+          "name": "Search product records",
+          "request": {
+            "name": "Search product records",
+            "description": {},
+            "url": {
+              "path": [
+                "products",
+                "search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"<string>\",\n  \"num_records\": \"<integer>\",\n  \"download\": \"<boolean>\",\n  \"format\": \"<string>\",\n  \"view\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "aa4fbb9b-8657-482c-b6c2-a3b56b1c34a7",
+              "name": "Matching records or download metadata",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "products",
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"query\": \"<string>\",\n  \"num_records\": \"<integer>\",\n  \"download\": \"<boolean>\",\n  \"format\": \"<string>\",\n  \"view\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"num_found\": 496,\n  \"num_records\": 9517,\n  \"download_id\": \"string\",\n  \"download_url\": \"http://QytYbqvTGsICTWCcPxmElPVbNgzIkzrKI.qpuknSnwjL197t2WK2juu,6hXB9HdT7yjHTQpjrRePXwT82Ti9\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "754eda40-81dd-446e-8424-87343d2648f7",
+      "name": "Properties",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "e8b06386-4aeb-4d33-8c3c-0bce27ac8e90",
+          "name": "Search property records",
+          "request": {
+            "name": "Search property records",
+            "description": {},
+            "url": {
+              "path": [
+                "properties",
+                "search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"<string>\",\n  \"num_records\": \"<integer>\",\n  \"download\": \"<boolean>\",\n  \"format\": \"<string>\",\n  \"view\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "dc28b31e-9117-4f4f-9e0c-04e46d1ad9bf",
+              "name": "Matching records or download metadata",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "properties",
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"query\": \"<string>\",\n  \"num_records\": \"<integer>\",\n  \"download\": \"<boolean>\",\n  \"format\": \"<string>\",\n  \"view\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"num_found\": 496,\n  \"num_records\": 9517,\n  \"download_id\": \"string\",\n  \"download_url\": \"http://QytYbqvTGsICTWCcPxmElPVbNgzIkzrKI.qpuknSnwjL197t2WK2juu,6hXB9HdT7yjHTQpjrRePXwT82Ti9\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.datafiniti.co/v4",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "7b2db305-fc6f-4cb8-be16-0a6cd600a5e3",
+    "name": "Datafiniti API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Datafiniti API exposes Data-as-a-Service endpoints for searching and downloading business, product, property, and people datasets aggregated from the public web. Authentication uses bearer tokens issued by the /v4/auth endpoint.\n\nContact Support:\n Name: Datafiniti",
+      "type": "text/plain"
+    }
+  }
+}

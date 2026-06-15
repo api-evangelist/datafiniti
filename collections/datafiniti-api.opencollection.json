@@ -1,0 +1,131 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Datafiniti API",
+    "version": "4.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Authentication",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Issue a bearer token",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.datafiniti.co/v4/auth",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Exchange email and password credentials for a bearer token used by all other endpoints."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Businesses",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search business records",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.datafiniti.co/v4/businesses/search",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Search the business dataset. Returns up to 10 matching records, or a bulk download when download true is set in the request body."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "People",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search people records",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.datafiniti.co/v4/people/search",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Search people records"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Products",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search product records",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.datafiniti.co/v4/products/search",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Search product records"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Properties",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search property records",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.datafiniti.co/v4/properties/search",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Search property records"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
