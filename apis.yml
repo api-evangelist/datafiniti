@@ -97,9 +97,9 @@ common:
     url: https://www.datafiniti.co
   - type: Documentation
     url: https://docs.datafiniti.co/docs/api-introduction
-  - type: Developer Portal
+  - type: DeveloperPortal
     url: https://developer.datafiniti.co
-  - type: SignUp
+  - type: Signup
     url: https://portal.datafiniti.co/sign-up
   - type: Login
     url: https://portal.datafiniti.co
@@ -113,7 +113,7 @@ common:
     url: capabilities/datafiniti-capabilities.yml
   - type: Rules
     url: rules/datafiniti-rules.yml
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://docs.datafiniti.co/llms.txt
 maintainers:
   - FN: Kin Lane
