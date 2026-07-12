@@ -89,6 +89,10 @@ apis:
       - type: Documentation
         url: https://developer.datafiniti.co
 common:
+  - type: DomainSecurity
+    url: security/datafiniti-domain-security.yml
+  - type: Authentication
+    url: authentication/datafiniti-authentication.yml
   - type: GitHubOrganization
     url: https://github.com/datafiniti
   - type: LinkedIn
