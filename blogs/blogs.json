@@ -2,11 +2,13 @@
   "repo": "datafiniti",
   "feeds": [
     {
-      "source": "https://blog.datafiniti.co",
+      "source": "https://portal.datafiniti.co",
+      "feed_url": "https://portal.datafiniti.co",
+      "title": "",
       "saved": 0,
-      "error": "Connection failed/timeout (HTTP 000) on every attempt"
+      "method": "none"
     }
   ],
   "post_count": 14,
-  "fetched": "2026-06-27T12:35:01Z"
+  "fetched": "2026-07-11T11:50:51Z"
 }
