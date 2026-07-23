@@ -1,0 +1,63 @@
+openapi: 3.1.0
+info:
+  title: Datafiniti Authentication API
+  description: The Datafiniti API exposes Data-as-a-Service endpoints for searching and downloading business, product, property, and people datasets aggregated from the public web. Authentication uses bearer tokens issued by the /v4/auth endpoint.
+  version: 4.0.0
+  contact:
+    name: Datafiniti
+    url: https://www.datafiniti.co
+servers:
+- url: https://api.datafiniti.co/v4
+  description: Datafiniti production API
+security:
+- bearerAuth: []
+tags:
+- name: Authentication
+paths:
+  /auth:
+    post:
+      operationId: authenticate
+      summary: Issue a bearer token
+      description: Exchange email and password credentials for a bearer token used by all other endpoints.
+      tags:
+      - Authentication
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AuthRequest'
+      responses:
+        '200':
+          description: Token issued
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+components:
+  schemas:
+    AuthRequest:
+      type: object
+      required:
+      - email
+      - password
+      properties:
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+          format: password
+    AuthResponse:
+      type: object
+      required:
+      - token
+      properties:
+        token:
+          type: string
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

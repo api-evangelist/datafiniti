@@ -1,0 +1,82 @@
+openapi: 3.1.0
+info:
+  title: Datafiniti Authentication Properties API
+  description: The Datafiniti API exposes Data-as-a-Service endpoints for searching and downloading business, product, property, and people datasets aggregated from the public web. Authentication uses bearer tokens issued by the /v4/auth endpoint.
+  version: 4.0.0
+  contact:
+    name: Datafiniti
+    url: https://www.datafiniti.co
+servers:
+- url: https://api.datafiniti.co/v4
+  description: Datafiniti production API
+security:
+- bearerAuth: []
+tags:
+- name: Properties
+paths:
+  /properties/search:
+    post:
+      operationId: searchProperties
+      summary: Search property records
+      tags:
+      - Properties
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SearchRequest'
+      responses:
+        '200':
+          description: Matching records or download metadata
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SearchResponse'
+components:
+  schemas:
+    SearchRequest:
+      type: object
+      required:
+      - query
+      properties:
+        query:
+          type: string
+          description: Datafiniti query expression filtering records.
+        num_records:
+          type: integer
+          description: Maximum number of records returned in a download.
+          minimum: 1
+        download:
+          type: boolean
+          description: When true, request a bulk download of all matching records.
+        format:
+          type: string
+          description: Bulk download format such as JSON or CSV.
+          enum:
+          - JSON
+          - CSV
+        view:
+          type: string
+          description: Named view selecting a subset of fields.
+    SearchResponse:
+      type: object
+      properties:
+        num_found:
+          type: integer
+        num_records:
+          type: integer
+        records:
+          type: array
+          items:
+            type: object
+        download_id:
+          type: string
+        download_url:
+          type: string
+          format: uri
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
