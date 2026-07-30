@@ -5,7 +5,20 @@ description: >-
   public web, delivering ready-to-use datasets for property, people, business, and product data through their API, web
   portal, and bulk downloads.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: true
+  try_now: true
+  public: false
+  label: Freemium (free trial) · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/datafiniti.png
 tags:
   - Business Data
   - Data Aggregation
@@ -21,73 +34,126 @@ kind: company
 position: Consumer
 access: 3rd-Party
 apis:
-  - aid: datafiniti:datafiniti-api
-    name: Datafiniti API
-    description: >-
-      Unified Datafiniti REST API exposing search and download endpoints for businesses, products, properties, and
-      people datasets, plus the bearer token authentication endpoint.
-    humanURL: https://docs.datafiniti.co/docs/api-introduction
-    baseURL: https://api.datafiniti.co/v4
-    tags:
-      - Authentication
-      - Bulk Downloads
-      - Search
-    properties:
-      - type: Documentation
-        url: https://docs.datafiniti.co/docs/api-introduction
-      - type: OpenAPI
-        url: openapi/datafiniti-api.yml
-      - type: JSONSchema
-        url: json-schema/search-request.json
-  - aid: datafiniti:business-data-api
-    name: Datafiniti Business Data API
-    description: >-
-      Access a large catalog of business listings aggregated from hundreds of online directories and review websites,
-      integrated with firmographics and reviews. Over 131 million business records available.
-    humanURL: https://www.datafiniti.co/data/business-data
-    tags:
-      - Business Data
-      - Business Listings
-      - Firmographics
-    properties:
-      - type: Documentation
-        url: https://developer.datafiniti.co
-  - aid: datafiniti:product-data-api
-    name: Datafiniti Product Data API
-    description: >-
-      Access millions of product records spanning major retailers, brands, and categories including detailed product
-      information, pricing data, and reviews. Over 506 million product records available.
-    humanURL: https://www.datafiniti.co/data/product-data
-    tags:
-      - E-Commerce
-      - Pricing Data
-      - Product Data
-    properties:
-      - type: Documentation
-        url: https://developer.datafiniti.co/docs/getting-started-with-product-data
-  - aid: datafiniti:property-data-api
-    name: Datafiniti Property Data API
-    description: >-
-      Access a large catalog of real estate listings from dozens of websites, integrated with pricing data, amenities,
-      and reviews. Over 205 million property records available.
-    humanURL: https://www.datafiniti.co/data/property-data
-    tags:
-      - Listings
-      - Property Data
-      - Real Estate
-    properties:
-      - type: Documentation
-        url: https://docs.datafiniti.co/docs/constructing-property-queries
-  - aid: datafiniti:people-data-api
-    name: Datafiniti People Data API
-    description: Access people data records aggregated from public web sources. Over 4 million people records available.
-    humanURL: https://www.datafiniti.co/data/people-data
-    tags:
-      - Contact Data
-      - People Data
-    properties:
-      - type: Documentation
-        url: https://developer.datafiniti.co
+- aid: datafiniti:business-data-api
+  name: Datafiniti Business Data API
+  description: >-
+    Access a large catalog of business listings aggregated from hundreds of online directories and review
+    websites, integrated with firmographics and reviews. Over 131 million business records available.
+  humanURL: https://www.datafiniti.co/data/business-data
+  tags:
+  - Business Data
+  - Business Listings
+  - Firmographics
+  properties:
+  - type: Documentation
+    url: https://developer.datafiniti.co
+- aid: datafiniti:product-data-api
+  name: Datafiniti Product Data API
+  description: >-
+    Access millions of product records spanning major retailers, brands, and categories including detailed
+    product information, pricing data, and reviews. Over 506 million product records available.
+  humanURL: https://www.datafiniti.co/data/product-data
+  tags:
+  - E-Commerce
+  - Pricing Data
+  - Product Data
+  properties:
+  - type: Documentation
+    url: https://developer.datafiniti.co/docs/getting-started-with-product-data
+- aid: datafiniti:property-data-api
+  name: Datafiniti Property Data API
+  description: >-
+    Access a large catalog of real estate listings from dozens of websites, integrated with pricing data,
+    amenities, and reviews. Over 205 million property records available.
+  humanURL: https://www.datafiniti.co/data/property-data
+  tags:
+  - Listings
+  - Property Data
+  - Real Estate
+  properties:
+  - type: Documentation
+    url: https://docs.datafiniti.co/docs/constructing-property-queries
+- aid: datafiniti:people-data-api
+  name: Datafiniti People Data API
+  description: >-
+    Access people data records aggregated from public web sources. Over 4 million people records available.
+  humanURL: https://www.datafiniti.co/data/people-data
+  tags:
+  - Contact Data
+  - People Data
+  properties:
+  - type: Documentation
+    url: https://developer.datafiniti.co
+- aid: datafiniti:datafiniti-authentication-api
+  name: Datafiniti Authentication API
+  description: The Authentication API from Datafiniti — 1 operation(s) for authentication.
+  humanURL: https://docs.datafiniti.co/docs/api-introduction
+  baseURL: https://api.datafiniti.co/v4
+  tags:
+  - Authentication
+  properties:
+  - type: OpenAPI
+    url: openapi/datafiniti-authentication-api-openapi.yml
+  - type: Documentation
+    url: https://docs.datafiniti.co/docs/api-introduction
+  - type: JSONSchema
+    url: json-schema/search-request.json
+- aid: datafiniti:datafiniti-businesses-api
+  name: Datafiniti Businesses API
+  description: The Businesses API from Datafiniti — 1 operation(s) for businesses.
+  humanURL: https://docs.datafiniti.co/docs/api-introduction
+  baseURL: https://api.datafiniti.co/v4
+  tags:
+  - Businesses
+  properties:
+  - type: OpenAPI
+    url: openapi/datafiniti-businesses-api-openapi.yml
+  - type: Documentation
+    url: https://docs.datafiniti.co/docs/api-introduction
+  - type: JSONSchema
+    url: json-schema/search-request.json
+- aid: datafiniti:datafiniti-people-api
+  name: Datafiniti People API
+  description: The People API from Datafiniti — 1 operation(s) for people.
+  humanURL: https://docs.datafiniti.co/docs/api-introduction
+  baseURL: https://api.datafiniti.co/v4
+  tags:
+  - People
+  properties:
+  - type: OpenAPI
+    url: openapi/datafiniti-people-api-openapi.yml
+  - type: Documentation
+    url: https://docs.datafiniti.co/docs/api-introduction
+  - type: JSONSchema
+    url: json-schema/search-request.json
+- aid: datafiniti:datafiniti-products-api
+  name: Datafiniti Products API
+  description: The Products API from Datafiniti — 1 operation(s) for products.
+  humanURL: https://docs.datafiniti.co/docs/api-introduction
+  baseURL: https://api.datafiniti.co/v4
+  tags:
+  - Products
+  properties:
+  - type: OpenAPI
+    url: openapi/datafiniti-products-api-openapi.yml
+  - type: Documentation
+    url: https://docs.datafiniti.co/docs/api-introduction
+  - type: JSONSchema
+    url: json-schema/search-request.json
+- aid: datafiniti:datafiniti-properties-api
+  name: Datafiniti Properties API
+  description: The Properties API from Datafiniti — 1 operation(s) for properties.
+  humanURL: https://docs.datafiniti.co/docs/api-introduction
+  baseURL: https://api.datafiniti.co/v4
+  tags:
+  - Properties
+  properties:
+  - type: OpenAPI
+    url: openapi/datafiniti-properties-api-openapi.yml
+  - type: Documentation
+    url: https://docs.datafiniti.co/docs/api-introduction
+  - type: JSONSchema
+    url: json-schema/search-request.json
 common:
   - type: AgenticAccess
     url: agentic-access/datafiniti-agentic-access.yml
