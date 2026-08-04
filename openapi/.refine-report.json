@@ -1,0 +1,22 @@
+{
+  "provider": "datafiniti",
+  "sources": [
+    "datafiniti-authentication-api-openapi.yml",
+    "datafiniti-businesses-api-openapi.yml",
+    "datafiniti-people-api-openapi.yml",
+    "datafiniti-products-api-openapi.yml",
+    "datafiniti-properties-api-openapi.yml"
+  ],
+  "outputs": [
+    "datafiniti-authentication-api-openapi.yml",
+    "datafiniti-businesses-api-openapi.yml",
+    "datafiniti-people-api-openapi.yml",
+    "datafiniti-products-api-openapi.yml",
+    "datafiniti-properties-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
