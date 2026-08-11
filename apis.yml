@@ -181,8 +181,6 @@ common:
     url: json-ld/datafiniti-context.jsonld
   - type: Vocabulary
     url: vocabulary/datafiniti-vocabulary.yml
-  - type: Capabilities
-    url: capabilities/datafiniti-capabilities.yml
   - type: Rules
     url: rules/datafiniti-rules.yml
   - type: LlmsText
