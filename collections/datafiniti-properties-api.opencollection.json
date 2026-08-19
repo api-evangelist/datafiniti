@@ -1,0 +1,39 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Datafiniti Authentication Properties API",
+    "version": "4.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Properties",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search property records",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.datafiniti.co/v4/properties/search",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Search property records"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

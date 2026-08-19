@@ -1,0 +1,39 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Datafiniti Authentication Products API",
+    "version": "4.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Products",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search product records",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.datafiniti.co/v4/products/search",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Search product records"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

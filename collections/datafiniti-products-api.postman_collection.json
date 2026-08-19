@@ -1,0 +1,139 @@
+{
+  "item": [
+    {
+      "id": "361fd5a0-3679-4200-a838-c5e6e7da2502",
+      "name": "Products",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "9a6ee21d-3ab7-4650-b704-6e2e596d0c4d",
+          "name": "Search product records",
+          "request": {
+            "name": "Search product records",
+            "description": {},
+            "url": {
+              "path": [
+                "products",
+                "search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"<string>\",\n  \"num_records\": \"<integer>\",\n  \"download\": \"<boolean>\",\n  \"format\": \"<string>\",\n  \"view\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "5364e09e-bac7-4070-838f-0609026b1c97",
+              "name": "Matching records or download metadata",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "products",
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"query\": \"<string>\",\n  \"num_records\": \"<integer>\",\n  \"download\": \"<boolean>\",\n  \"format\": \"<string>\",\n  \"view\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"num_found\": 9579,\n  \"num_records\": 4895,\n  \"download_id\": \"string\",\n  \"download_url\": \"https://nvzFBljDkBKxFeAPCPpQnZ.plZj,H3f,,iAwTJX9E8ngFosJClWUl6cTdXt\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.datafiniti.co/v4",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "0a03be13-9418-44a4-ab6e-365f9a5c8ff2",
+    "name": "Datafiniti Authentication Products API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Datafiniti API exposes Data-as-a-Service endpoints for searching and downloading business, product, property, and people datasets aggregated from the public web. Authentication uses bearer tokens issued by the /v4/auth endpoint.\n\nContact Support:\n Name: Datafiniti",
+      "type": "text/plain"
+    }
+  }
+}

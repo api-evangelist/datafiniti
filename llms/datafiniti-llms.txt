@@ -1,0 +1,423 @@
+# Datafiniti 
+
+## v4.0
+
+- [Welcome to Datafiniti Documentation](https://docs.datafiniti.co/home.md): Everything you need to integrate Datafiniti's product, business, property, and people data APIs into your application — from your first API call to production.
+- [Home 2](https://docs.datafiniti.co/home-2.md): No description found
+- [Introduction](https://docs.datafiniti.co/docs/api-introduction.md): No description found
+- [How Credits Work](https://docs.datafiniti.co/docs/how-credits-work-api.md): No description found
+- [Property Data](https://docs.datafiniti.co/docs/api-property-data.md): No description found
+- [Getting Started with Property Data](https://docs.datafiniti.co/docs/getting-started-with-property-data.md): No description found
+- [Property Data with Postman](https://docs.datafiniti.co/docs/property-data-with-postman.md): No description found
+- [Property Data With cURL](https://docs.datafiniti.co/docs/property-data-with-curl.md): No description found
+- [Property Data with Node.js](https://docs.datafiniti.co/docs/property-data-with-nodejs.md): No description found
+- [Property Data With PHP](https://docs.datafiniti.co/docs/property-data-with-php.md): No description found
+- [Property Data with Python](https://docs.datafiniti.co/docs/property-data-with-python.md): No description found
+- [Property Data with WPGetAPI](https://docs.datafiniti.co/docs/property-data-with-wpgetapi.md): No description found
+- [Property Data Schema](https://docs.datafiniti.co/docs/property-data-schema.md): Reference the available fields in a property record, grouped by category with nested sub-fields, examples, and deprecation notes.
+- [Property Field Type Breakdown](https://docs.datafiniti.co/docs/property-field-type-breakdown.md): No description found
+- [Possible Values for Property Fields](https://docs.datafiniti.co/docs/possible-values-for-property-fields.md): No description found
+- [Normalized Property Addresses](https://docs.datafiniti.co/docs/normalized-address-data.md): No description found
+- [Normalized Countries & Provinces](https://docs.datafiniti.co/docs/normalized-countries-provinces.md): No description found
+- [How Property Records Are Merged](https://docs.datafiniti.co/docs/how-property-records-are-merged.md): No description found
+- [Views](https://docs.datafiniti.co/docs/property-data-views.md): No description found
+- [Available Views for Property Data](https://docs.datafiniti.co/docs/available-views-for-property-data.md): No description found
+- [Using a custom property view on the fly](https://docs.datafiniti.co/docs/using-a-custom-property-view.md): No description found
+- [Create & save a property custom view](https://docs.datafiniti.co/docs/create-save-a-custom-property-view.md): No description found
+- [Constructing Property Queries](https://docs.datafiniti.co/docs/constructing-property-queries.md): No description found
+- [Advanced Queries of Property Data in Postman](https://docs.datafiniti.co/docs/advanced-queries-of-property-postman.md): No description found
+- [Use Cases for Property Data](https://docs.datafiniti.co/docs/use-cases-for-property-data.md): No description found
+- [Property Use Cases](https://docs.datafiniti.co/docs/property-use-cases.md): No description found
+- [Search for MLS Numbers or Download MLS Markets](https://docs.datafiniti.co/docs/search-for-mls-property-data.md): No description found
+- [Determine home values](https://docs.datafiniti.co/docs/determine-home-values.md): No description found
+- [Search latitude & longitude for properties](https://docs.datafiniti.co/docs/search-for-properties-around-a-latlong.md): No description found
+- [Select sites for commercial development](https://docs.datafiniti.co/docs/select-sites-for-commercial-development.md): No description found
+- [Find locations of dental offices](https://docs.datafiniti.co/docs/find-locations-of-dental-offices.md): No description found
+- [Find owners that need roofing work](https://docs.datafiniti.co/docs/contact-home-owners-that-need-roofing-work.md): No description found
+- [Contact new home owners](https://docs.datafiniti.co/docs/contact-new-home-owners.md): No description found
+- [Search on property statuses](https://docs.datafiniti.co/docs/search-property-status.md): No description found
+- [Search Via Street Address](https://docs.datafiniti.co/docs/search-via-street-address.md): No description found
+- [Discover when clients sell their homes](https://docs.datafiniti.co/docs/discover-when-clients-sell-their-homes.md): No description found
+- [Find investment properties](https://docs.datafiniti.co/docs/find-investment-properties.md): No description found
+- [Identify e-commerce orders shipping to vacant houses](https://docs.datafiniti.co/docs/identify-e-commerce-orders-shipping-to-vacant-houses.md): No description found
+- [Collect HOA fee data for a property](https://docs.datafiniti.co/docs/collect-hoa-fee-data-for-a-property.md): No description found
+- [Find rental rates for properties](https://docs.datafiniti.co/docs/find-rental-rates-for-properties.md): No description found
+- [Find property comps from transaction data](https://docs.datafiniti.co/docs/find-property-comps-from-transaction-data.md): No description found
+- [Find prices of sold properties](https://docs.datafiniti.co/docs/find-prices-of-sold-properties.md): No description found
+- [Track property status changes](https://docs.datafiniti.co/docs/track-property-status-changes.md): No description found
+- [Search broker listing property](https://docs.datafiniti.co/docs/search-broker-license-numbers.md): No description found
+- [Generate a list of recent broker contacts](https://docs.datafiniti.co/docs/generate-a-list-of-recent-broker-contacts.md): No description found
+- [Find property refinance data](https://docs.datafiniti.co/docs/find-property-refinance-data.md): No description found
+- [Find days on market for commercial property](https://docs.datafiniti.co/docs/find-days-on-market-from-commercial-property.md): No description found
+- [Find property with a lien](https://docs.datafiniti.co/docs/find-property-with-liens.md): No description found
+- [Find mortgage lender from transactions](https://docs.datafiniti.co/docs/find-mortgage-lender-from-transactions.md): No description found
+- [Accessing owners, brokers, & other people data](https://docs.datafiniti.co/docs/accessing-owners-brokers-and-other-people.md): No description found
+- [Building rental property data market reports](https://docs.datafiniti.co/docs/building-rental-property-data-market-reports.md): No description found
+- [API Features](https://docs.datafiniti.co/docs/property-api-features.md): No description found
+- [Autotrace](https://docs.datafiniti.co/docs/autotrace-property.md): No description found
+- [Count](https://docs.datafiniti.co/docs/count-property.md): No description found
+- [Fuzzy Match](https://docs.datafiniti.co/docs/fuzzy-match-property.md): No description found
+- [Geolocation](https://docs.datafiniti.co/docs/geolocation-property.md): No description found
+- [Pagination](https://docs.datafiniti.co/docs/pagination-property.md): No description found
+- [C# Property Data SDK](https://docs.datafiniti.co/docs/c-property-data-sdk.md): No description found
+- [Python - Property Data SDK](https://docs.datafiniti.co/docs/Python-Property-Data-SDK.md): Install, authenticate, and make your first property searches with the Datafiniti Property Data SDK for Python.
+- [Node.js - Property Data SDK](https://docs.datafiniti.co/docs/nodejs-property-data-sdk.md): No description found
+- [People Data](https://docs.datafiniti.co/docs/api-people-data.md): No description found
+- [Getting Started with People Data](https://docs.datafiniti.co/docs/getting-started-with-people-data-1.md): No description found
+- [People Data with Postman](https://docs.datafiniti.co/docs/people-data-with-postman.md): No description found
+- [People Data with cURL](https://docs.datafiniti.co/docs/people-data-with-curl.md): No description found
+- [People Data with Node.js](https://docs.datafiniti.co/docs/people-data-with-nodejs.md): No description found
+- [People Data with PHP](https://docs.datafiniti.co/docs/people-data-with-php.md): No description found
+- [People Data with Python](https://docs.datafiniti.co/docs/people-data-with-python.md): No description found
+- [People Data Schema](https://docs.datafiniti.co/docs/people-data-schema.md): No description found
+- [People Field Type Breakdown](https://docs.datafiniti.co/docs/people-field-type-breakdown.md): No description found
+- [Possible Values for People Fields](https://docs.datafiniti.co/docs/possible-values-for-people-fields.md): No description found
+- [Available Views for People Data](https://docs.datafiniti.co/docs/available-views-for-people-data.md): No description found
+- [Default view](https://docs.datafiniti.co/docs/people_all.md): No description found
+- [Creating a Custom People View on the Fly](https://docs.datafiniti.co/docs/creating-a-custom-people-view-on-the-fly.md): No description found
+- [Create & Save a Custom People View](https://docs.datafiniti.co/docs/create-save-a-custom-people-view.md): No description found
+- [Use Cases for People Data](https://docs.datafiniti.co/docs/use-cases-for-people-data.md): No description found
+- [People Use Cases](https://docs.datafiniti.co/docs/people-use-cases.md): No description found
+- [Find leads for a SaaS business](https://docs.datafiniti.co/docs/find-leads-for-a-saas-business.md): No description found
+- [Identifying companies with employees targeted by cyberattacks](https://docs.datafiniti.co/docs/identifying-companies-with-employees-targeted-by-cyberattacks.md): No description found
+- [Gather people contact information](https://docs.datafiniti.co/docs/gather-people-contact-information.md): No description found
+- [Accessing property data linked to people records](https://docs.datafiniti.co/docs/accessing-property-linked-people-records.md): No description found
+- [Find brokers in your area](https://docs.datafiniti.co/docs/find-brokers-in-your-area.md): No description found
+- [Constructing People Queries](https://docs.datafiniti.co/docs/constructing-people-queries.md): No description found
+- [API Features](https://docs.datafiniti.co/docs/people-api-features.md): No description found
+- [Count](https://docs.datafiniti.co/docs/people-count.md): No description found
+- [Pagination](https://docs.datafiniti.co/docs/people-pagination.md): No description found
+- [C# - People Data SDK](https://docs.datafiniti.co/docs/c-people-data-sdk.md): No description found
+- [Node.js - People Data SDK](https://docs.datafiniti.co/docs/nodejs-people-data-sdk.md): No description found
+- [Python - People Data SDK](https://docs.datafiniti.co/docs/python-people-data-sdk.md): No description found
+- [Product Data](https://docs.datafiniti.co/docs/api-product-data.md): No description found
+- [Getting Started With Product Data](https://docs.datafiniti.co/docs/getting-started-with-product-data.md): No description found
+- [Product Data With Postman](https://docs.datafiniti.co/docs/product-data-with-postman.md): No description found
+- [Product Data With Python](https://docs.datafiniti.co/docs/product-data-with-python.md): No description found
+- [Product Data With Node.js](https://docs.datafiniti.co/docs/product-data-with-nodejs.md): No description found
+- [Product Data With cURL](https://docs.datafiniti.co/docs/product-data-with-curl.md): No description found
+- [Product Data With PHP](https://docs.datafiniti.co/docs/product-data-with-php.md): No description found
+- [Product Data Schema](https://docs.datafiniti.co/docs/product-data-schema.md): No description found
+- [Product Field Type Breakdown](https://docs.datafiniti.co/docs/product-field-type-breakdown.md): No description found
+- [Product Brand Normalization](https://docs.datafiniti.co/docs/product-brand-normalization.md): No description found
+- [Possible Values for Product Fields](https://docs.datafiniti.co/docs/possible-values-for-product-fields.md): No description found
+- [Dimensions Normalization](https://docs.datafiniti.co/docs/dimensions-normalization.md): No description found
+- [Product Categorization](https://docs.datafiniti.co/docs/product-categorization.md): Understand Datafiniti's categories field and nine-level taxonomy system for product data, with links to every taxonomy reference table.
+- [Taxonomy 1 Level](https://docs.datafiniti.co/docs/taxonomy-1-level.md): No description found
+- [Taxonomy 2 Levels](https://docs.datafiniti.co/docs/taxonomy-2-levels.md): No description found
+- [Taxonomy 3 Levels](https://docs.datafiniti.co/docs/taxonomy-3-levels.md): No description found
+- [Taxonomy 4 Levels](https://docs.datafiniti.co/docs/taxonomy-4-levels.md): No description found
+- [Taxonomy 5 Levels](https://docs.datafiniti.co/docs/taxonomy-5-levels.md): No description found
+- [Taxonomy 6 Levels](https://docs.datafiniti.co/docs/taxonomy-6-levels.md): No description found
+- [Taxonomy 7 Levels](https://docs.datafiniti.co/docs/taxonomy-7-levels.md): No description found
+- [Taxonomy 8 Levels](https://docs.datafiniti.co/docs/taxonomy-8-levels.md): No description found
+- [Taxonomy 9 Levels](https://docs.datafiniti.co/docs/taxonomy-9-levels.md): No description found
+- [Views](https://docs.datafiniti.co/docs/available-views-for-product-data.md): No description found
+- [Available Views for Product Data](https://docs.datafiniti.co/docs/product_all.md): No description found
+- [Creating a custom product view on the fly](https://docs.datafiniti.co/docs/creating-a-custom-product-view-on-the-fly.md): No description found
+- [Create & Save a Custom Product View](https://docs.datafiniti.co/docs/create-save-a-custom-product-view.md): No description found
+- [Constructing Product Queries](https://docs.datafiniti.co/docs/constructing-product-queries.md): No description found
+- [Constructing Advanced Product Data Queries in Postman](https://docs.datafiniti.co/docs/constructing-advanced-product-data-queries-in-postman.md): No description found
+- [How Product Records Are Sourced](https://docs.datafiniti.co/docs/how-product-records-are-sourced.md): Learn how Datafiniti collects, normalizes, and merges product data from dozens of e-commerce sources into unified product records you can query via API.
+- [How Product Records Are Merged](https://docs.datafiniti.co/docs/how-product-records-are-merged.md): No description found
+- [Use Cases for Product Data](https://docs.datafiniti.co/docs/use-cases-for-product-data.md): No description found
+- [Product Use Cases](https://docs.datafiniti.co/docs/product-use-cases.md): No description found
+- [Lookup Products by GTIN (UPC, EAN, etc.)](https://docs.datafiniti.co/docs/searching-by-gtin.md): No description found
+- [Lookup Products by Brand and Model Number](https://docs.datafiniti.co/docs/lookup-products-by-brand-and-model-number.md): No description found
+- [Train LLMs with Product Descriptions and Review](https://docs.datafiniti.co/docs/train-llms-with-product-descriptions-and-review.md): No description found
+- [Pricing Analytics for Pet Food](https://docs.datafiniti.co/docs/pricing-analytics-for-pet-food.md): No description found
+- [Cleanup Product Data Entered by Customers](https://docs.datafiniti.co/docs/cleanup-product-data-entered-by-customers.md): No description found
+- [Build a Database of Wines](https://docs.datafiniti.co/docs/build-a-database-of-wines.md): No description found
+- [Provide Personalized Pricing Recommendations](https://docs.datafiniti.co/docs/provide-personalized-pricing-recommendations.md): No description found
+- [Match Products Against a Competitor](https://docs.datafiniti.co/docs/match-products-against-a-competitor.md): No description found
+- [Search for Smart Phones](https://docs.datafiniti.co/docs/search-for-smart-phones.md): No description found
+- [Finding Product Material Info](https://docs.datafiniti.co/docs/finding-product-material-info.md): No description found
+- [API Features](https://docs.datafiniti.co/docs/product-api-features.md): No description found
+- [Count](https://docs.datafiniti.co/docs/product-count.md): No description found
+- [Pagination](https://docs.datafiniti.co/docs/product-pagination.md): No description found
+- [C# - Product Data SDK](https://docs.datafiniti.co/docs/c-product-data-sdk.md): No description found
+- [Python - Product Data SDK](https://docs.datafiniti.co/docs/python-product-data-sdk.md): No description found
+- [Node.js - Product Data SDK](https://docs.datafiniti.co/docs/nodejs-product-data-sdk.md): No description found
+- [Business Data](https://docs.datafiniti.co/docs/api-business-data.md): No description found
+- [Getting Started with Business Data](https://docs.datafiniti.co/docs/getting-started-with-business-data.md): No description found
+- [Business Data With Postman](https://docs.datafiniti.co/docs/business-data-with-postman.md): No description found
+- [Business Data with Php](https://docs.datafiniti.co/docs/business-data-with-php.md): No description found
+- [Business Data With Python](https://docs.datafiniti.co/docs/business-data-with-python.md): No description found
+- [Business Data With Node.js](https://docs.datafiniti.co/docs/business-data-with-nodejs.md): No description found
+- [Business Data for cURL](https://docs.datafiniti.co/docs/business-data-with-curl.md): No description found
+- [Business Data Schema](https://docs.datafiniti.co/docs/business-data-schema.md): No description found
+- [How Business Records Are Merged](https://docs.datafiniti.co/docs/how-business-records-are-merged.md): No description found
+- [Business Field Type Breakdown](https://docs.datafiniti.co/docs/business-field-type-breakdown.md): No description found
+- [Possible Values for Business Fields](https://docs.datafiniti.co/docs/possible-values-for-business-fields.md): No description found
+- [Views](https://docs.datafiniti.co/docs/business-view.md): No description found
+- [Available Views for Business Data](https://docs.datafiniti.co/docs/available-views-for-business-data-1.md): No description found
+- [Constructing Business Queries](https://docs.datafiniti.co/docs/constructing-business-queries.md): No description found
+- [Constructing Advanced Business Data Queries in Postman](https://docs.datafiniti.co/docs/constructing-advanced-business-data-queries-in-postman.md): No description found
+- [Business Data Use Cases](https://docs.datafiniti.co/docs/business-data-use-cases.md): No description found
+- [Discover Revenue of Businesses](https://docs.datafiniti.co/docs/discover-business-revenue.md): No description found
+- [Search Via Street Address](https://docs.datafiniti.co/docs/search-via-street-address-business.md): No description found
+- [Search for Specific Restaurants](https://docs.datafiniti.co/docs/search-for-specific-restaurants.md): No description found
+- [Find Local Restaurants Using GeoLocation](https://docs.datafiniti.co/docs/find-local-restaurants-using-geolocation.md): No description found
+- [API Features](https://docs.datafiniti.co/docs/business-api-features.md): No description found
+- [Count](https://docs.datafiniti.co/docs/business-count.md): No description found
+- [Fuzzy Match](https://docs.datafiniti.co/docs/fuzzy-match-business.md): Control how business address queries match stored records by using fuzzy matching, exact matching, or exact-then-fallback retry behavior.
+- [Geolocation](https://docs.datafiniti.co/docs/business-geolocation.md): No description found
+- [Pagination](https://docs.datafiniti.co/docs/business-pagination.md): No description found
+- [C# - Business Data SDK](https://docs.datafiniti.co/docs/c-business-data-sdk.md): No description found
+- [Python - Business Data SDK](https://docs.datafiniti.co/docs/business-data-sdk.md): No description found
+- [Node.js - Business Data SDK](https://docs.datafiniti.co/docs/nodejs-business-data-sdk.md): No description found
+- [Enrichment & Suppression](https://docs.datafiniti.co/docs/enrichment-suppression.md): No description found
+- [Product Data Enrichment with CSV](https://docs.datafiniti.co/docs/product-data-enrichment.md): No description found
+- [Product Data Enrichment with Postman and JSON](https://docs.datafiniti.co/docs/property-data-with-postman-and-json.md): No description found
+- [Property Data Enrichment with CSV](https://docs.datafiniti.co/docs/property-data-enrichment-with-csv.md): No description found
+- [Property Data Enrichment with JSON](https://docs.datafiniti.co/docs/property-data-enrichment-with-json.md): No description found
+- [Property Data Suppression with CSV](https://docs.datafiniti.co/docs/property-data-suppression-with-postman.md): No description found
+- [Real-time Data Requests](https://docs.datafiniti.co/docs/real-time-data-request.md): No description found
+- [Scrape API](https://docs.datafiniti.co/docs/realtime-data-requests.md): No description found
+- [Targeted Updates](https://docs.datafiniti.co/docs/getting-started-with-realtime-updates.md): No description found
+- [Introduction](https://docs.datafiniti.co/docs/portal-introduction.md): No description found
+- [How Credits Work - Portal](https://docs.datafiniti.co/docs/how-credits-work-portal.md): No description found
+- [Portal Walkthrough](https://docs.datafiniti.co/docs/portal-walkthrough.md): No description found
+- [Settings](https://docs.datafiniti.co/docs/settings.md): No description found
+- [Billing & Subscription Plan](https://docs.datafiniti.co/docs/billing.md): No description found
+- [Downloading Result Files](https://docs.datafiniti.co/docs/downloading-result-files.md): No description found
+- [Get Your Postman Collection and Token](https://docs.datafiniti.co/docs/get-your-postman-collection-and-token.md): No description found
+- [Postman: Endpoint Overview](https://docs.datafiniti.co/docs/postman-endpoint-overview.md): No description found
+- [Postman: Download Result Files](https://docs.datafiniti.co/docs/postman-downloading-result-files.md): No description found
+- [Advanced Querying Building](https://docs.datafiniti.co/docs/advanced-querying.md): No description found
+- [Property Data](https://docs.datafiniti.co/docs/property-data-portal.md): No description found
+- [Property Data Features](https://docs.datafiniti.co/docs/property-data-features.md): No description found
+- [Searching by Address in Property](https://docs.datafiniti.co/docs/searching-by-address-in-property.md): No description found
+- [Determine Home Values - Portal](https://docs.datafiniti.co/docs/determine-home-values-portal.md): No description found
+- [Find recently sold property](https://docs.datafiniti.co/docs/find-recently-sold-property.md): No description found
+- [Search sites for commercial development](https://docs.datafiniti.co/docs/search-sites-for-commercial-development.md): No description found
+- [Discover when clients sell their homes - Portal](https://docs.datafiniti.co/docs/discover-when-clients-sell-their-homes-portal.md): No description found
+- [Property Data Views](https://docs.datafiniti.co/docs/portal-property-data-views.md): No description found
+- [People Data](https://docs.datafiniti.co/docs/people-data-portal.md): No description found
+- [Generate leads for a SaaS business](https://docs.datafiniti.co/docs/generate-leads-for-a-saas-business.md): No description found
+- [Identifying employees targeted by cyberattacks](https://docs.datafiniti.co/docs/identifying-employees-targeted-by-cyberattacks.md): No description found
+- [Product Data](https://docs.datafiniti.co/docs/product-data-portal.md): No description found
+- [Searching by UPC in Product Data](https://docs.datafiniti.co/docs/searching-by-upc-in-product-data.md): No description found
+- [Searching by SKU in Product Data](https://docs.datafiniti.co/docs/searching-by-sku-in-product-data.md): No description found
+- [Finding Compliance Features In Product Data](https://docs.datafiniti.co/docs/finding-compliance-features-in-product-data.md): No description found
+- [Finding Highly Rated Products](https://docs.datafiniti.co/docs/finding-highly-rated-products.md): No description found
+- [Business Data](https://docs.datafiniti.co/docs/business-data-portal.md): No description found
+- [Searching Restaurants](https://docs.datafiniti.co/docs/searching-restaurants.md): No description found
+- [Find Franchised Restaurants in Your State](https://docs.datafiniti.co/docs/find-chain-restaurants-in-your-state.md): No description found
+- [Search and Downloads](https://docs.datafiniti.co/reference/search-and-downloads.md): Search and download business, people, product, and property data via the Datafiniti API.
+- [Business Data](https://docs.datafiniti.co/reference/businesses.md): Search over 100 million business records using the Datafiniti API.
+- [People Data](https://docs.datafiniti.co/reference/people-data.md): Search millions of people records using the Datafiniti API.
+- [Product Data](https://docs.datafiniti.co/reference/products.md): Search over 250 million product records using the Datafiniti API.
+- [Property Data](https://docs.datafiniti.co/reference/properties.md): Search millions of property records using the Datafiniti API.
+- [Get a Specific Record](https://docs.datafiniti.co/reference/get-a-specific-record.md): Retrieve a specific record by its unique identifier from any Datafiniti data type.
+- [Get all Downloads](https://docs.datafiniti.co/reference/get-all-downloads.md): Retrieve an array of all downloads you have started, including cancelled and completed ones.
+- [Get a Download](https://docs.datafiniti.co/reference/get-a-download.md): Retrieve information about a specific download by its ID.
+- [Cancel a Download](https://docs.datafiniti.co/reference/cancel-a-download.md): Cancel an in-progress download. Cancelled downloads retain records added before cancellation.
+- [Views](https://docs.datafiniti.co/reference/views.md): Create and manage views that filter which fields are returned in search results.
+- [Create View](https://docs.datafiniti.co/reference/create-view.md): Create a new view to configure and save custom field filters for later use.
+- [Update View](https://docs.datafiniti.co/reference/update-view.md): Update an existing view by its name.
+- [Get all Views](https://docs.datafiniti.co/reference/get-all-views.md): Retrieve all views that have been created by the authenticated user.
+- [Get a View by name](https://docs.datafiniti.co/reference/get-a-view-by-name.md): Retrieve a single view by its name.
+- [Delete a View](https://docs.datafiniti.co/reference/delete-a-view.md): Delete a previously created view by its name.
+- [Real-time Data Requests](https://docs.datafiniti.co/reference/real-time-data-requests.md): Get the web data you need in real-time using the Datafiniti scrape API.
+- [Create a Real-time Update](https://docs.datafiniti.co/reference/create-a-real-time-update.md): Refresh the data you need in real-time by creating a targeted update.
+- [View Real-time Updates](https://docs.datafiniti.co/reference/view-all-real-time-updates.md): View all created real-time updates and their current status.
+- [Authentication](https://docs.datafiniti.co/reference/authentication.md): Use your email and password to receive a bearer token for authenticating API requests.
+- [Get Your Account](https://docs.datafiniti.co/reference/get-your-account.md): Retrieve your account information, including remaining credits and usage by data type.
+- [Update Your Account](https://docs.datafiniti.co/reference/update-your-account.md): Update your account information, including your email and password.
+- [API Status Check](https://docs.datafiniti.co/reference/api-status-check.md): Check the operational status of the Datafiniti API.
+- [Changelog](https://docs.datafiniti.co/changelog/index.md): Track monthly data release logs, schema changes, new features, and portal updates across Datafiniti's property, business, product, and people data.
+- [August 2026 Release Log](https://docs.datafiniti.co/august-2026.md): Improved address match rates over 80%, new C# and Node.js SDKs, and expanded product and property data coverage.
+- [July 2026 Release Log](https://docs.datafiniti.co/july-2026.md): No description found
+- [June 2026 Release Log](https://docs.datafiniti.co/june-2026.md): Public release of the Datafiniti Python SDK, intelligent address fuzzy matching, expanded data coverage, and a preview of upcoming USPS-standardized address matching enhancements.
+- [May 2026 Release Log](https://docs.datafiniti.co/may-2026.md): A redesigned Datafiniti documentation website with AiAssistant, a built-in status page, and public developer resources.
+- [March 2026 — Profile Images & Developer Resources](https://docs.datafiniti.co/changelog/2026/202603-data-release-log.md): No description found
+- [February 2026 — Property Data Schema Update](https://docs.datafiniti.co/changelog/2026/202602-data-release-log.md): No description found
+- [January 2026 — 2026 Operating Priorities](https://docs.datafiniti.co/changelog/2026/202601-data-release-log.md): No description found
+- [November 2025 — Property Pricing Updates](https://docs.datafiniti.co/changelog/2025/202511-data-release-log.md): No description found
+- [October 2025 — New County Sources](https://docs.datafiniti.co/changelog/2025/202510-data-release-log.md): No description found
+- [September 2025 — Commercial Property Fields](https://docs.datafiniti.co/changelog/2025/202509-data-release-log.md): No description found
+- [August 2025 — Rental Status Improvements](https://docs.datafiniti.co/changelog/2025/202508-data-release-log.md): No description found
+- [July 2025 — Broker & Property Fields](https://docs.datafiniti.co/changelog/2025/202507-data-release-log.md): No description found
+- [June 2025 — People & Property Integration](https://docs.datafiniti.co/changelog/2025/202506-data-release-log.md): No description found
+- [March 2025 — Parking & People Data](https://docs.datafiniti.co/changelog/2025/202503-data-release-log.md): No description found
+- [February 2025 — Property Statuses & Schema](https://docs.datafiniti.co/changelog/2025/202502-data-release-log.md): No description found
+- [November 2024 — Autotrace Launch & County Expansion](https://docs.datafiniti.co/changelog/2024/202411-data-release-log.md): No description found
+- [September 2024 — Realtor License Types & Portal Search](https://docs.datafiniti.co/changelog/2024/202409-data-release-log.md): No description found
+- [July 2024 — 1M+ New Properties & Rental Price Field](https://docs.datafiniti.co/changelog/2024/202407-data-release-log.md): No description found
+- [April 2024 — County Assessor Expansion](https://docs.datafiniti.co/changelog/2024/202404-data-release-log.md): No description found
+- [February 2024 — DR8 — Data Quality Improvements](https://docs.datafiniti.co/changelog/2024/202402-data-release-log.md): No description found
+- [December 2023 — DR5 Live — Standardization & Floor Plans](https://docs.datafiniti.co/changelog/2023/202312-data-release-log.md): No description found
+- [November 2023 — DR4 & DR5 — 31 New Property Fields](https://docs.datafiniti.co/changelog/2023/202311-data-release-log.md): No description found
+- [October 2023 — Foreclosure Statuses & New Schema Fields](https://docs.datafiniti.co/changelog/2023/202310-data-release-log.md): No description found
+- [September 2023 — Owner Data in People & County Expansion](https://docs.datafiniti.co/changelog/2023/202309-data-release-log.md): No description found
+- [August 2023 — Broker License Linking & People Schema](https://docs.datafiniti.co/changelog/2023/202308-data-release-log.md): No description found
+- [July 2023 — County/FIPS Fields & Portal Data Plans](https://docs.datafiniti.co/changelog/2023/202307-data-release-log.md): No description found
+- [June 2023 — New Broker Source & Address Normalization](https://docs.datafiniti.co/changelog/2023/202306-data-release-log.md): No description found
+- [May 2023 — Home Sale Transactions & New Website](https://docs.datafiniti.co/changelog/2023/202305-data-release-log.md): No description found
+- [April 2023 — Commercial Property & Delisted Statuses](https://docs.datafiniti.co/changelog/2023/202304-data-release-log.md): No description found
+- [February 2023 — Commercial RE People & Faster Refresh](https://docs.datafiniti.co/changelog/2023/202302-data-release-log.md): No description found
+- [January 2023 — First County Crawler & People Import](https://docs.datafiniti.co/changelog/2023/202301-data-release-log.md): No description found
+- [December 2022 — Commercial Property & Brand Normalization](https://docs.datafiniti.co/changelog/2022/202212-data-release-log.md): No description found
+- [November 2022 — Broker License Numbers & Portal Filters](https://docs.datafiniti.co/changelog/2022/202211-data-release-log.md): No description found
+- [September 2022 — Portal Views & Data Enrichment Beta](https://docs.datafiniti.co/changelog/2022/20229-data-release-log.md): No description found
+- [August 2022 — Enhanced Rental Properties](https://docs.datafiniti.co/changelog/2022/20228-data-release-log.md): No description found
+- [July 2022 — UK Property & Product Expansion](https://docs.datafiniti.co/changelog/2022/20227-data-release-log.md): No description found
+- [June 2022 — mostRecent Product Fields & Broker Data](https://docs.datafiniti.co/changelog/2022/20226-data-release-log.md): No description found
+- [March 2021 — Property Focus & Minor Updates](https://docs.datafiniti.co/changelog/2021/20213-data-release-log.md): No description found
+- [February 2021 — Major Property Data Removal](https://docs.datafiniti.co/changelog/2021/20212-data-release-log.md): No description found
+- [January 2021 — Property Performance Improvements](https://docs.datafiniti.co/changelog/2021/20211-data-release-log.md): No description found
+- [December 2020 — Holiday Maintenance](https://docs.datafiniti.co/changelog/2020/202012-data-release-log.md): No description found
+- [November 2020 — New People Fields & Product Sources](https://docs.datafiniti.co/changelog/2020/202011-data-release-log.md): No description found
+- [October 2020 — Product Classification Complete](https://docs.datafiniti.co/changelog/2020/202010-data-release-log.md): No description found
+- [September 2020 — Product Taxonomy Classification Underway](https://docs.datafiniti.co/changelog/2020/20209-data-release-log.md): No description found
+- [August 2020 — Minor Updates](https://docs.datafiniti.co/changelog/2020/20208-data-release-log.md): No description found
+- [July 2020 — New Pipelines & Classification Live](https://docs.datafiniti.co/changelog/2020/20207-data-release-log.md): No description found
+- [April 2020 — Source Search Transition](https://docs.datafiniti.co/changelog/2020/20204-data-release-log.md): No description found
+- [March 2020 — Steady Growth](https://docs.datafiniti.co/changelog/2020/20203-data-release-log.md): No description found
+- [February 2020 — Erroneous Data Cleanup](https://docs.datafiniti.co/changelog/2020/20202-data-release-log.md): No description found
+- [January 2020 — New Year Kickoff](https://docs.datafiniti.co/changelog/2020/20201-data-release-log.md): No description found
+- [December 2019 — Holiday Maintenance Release](https://docs.datafiniti.co/changelog/2019/201912-data-release-log.md): No description found
+- [November 2019 — Merging Logic Overhaul](https://docs.datafiniti.co/changelog/2019/201911-data-release-log.md): No description found
+- [October 2019 — Database Tooling Overhaul Begins](https://docs.datafiniti.co/changelog/2019/201910-data-release-log.md): No description found
+- [September 2019 — Property Schema Updates](https://docs.datafiniti.co/changelog/2019/20199-data-release-log.md): No description found
+- [August 2019 — Schema Revisions](https://docs.datafiniti.co/changelog/2019/20198-data-release-log.md): No description found
+- [July 2019 — Initial Release Log](https://docs.datafiniti.co/changelog/2019/20197-data-release-log.md): No description found
+- [2018 — Major API Overhaul — V4 Launch](https://docs.datafiniti.co/changelog/2018/v4-is-here.md): No description found
+- [2018 — Expanded Query & Performance for Property Data](https://docs.datafiniti.co/changelog/2018/expanded-query-capabilities-and-accelerated-data-delivery-comes-to-property-data.md): No description found
+- [2018 — New CSV View for Business Reviews](https://docs.datafiniti.co/changelog/2018/new-business-view-for-reviews.md): No description found
+- [2018 — 50 Records Per Preview Call](https://docs.datafiniti.co/changelog/2018/increasing-of-records-returned-by-preview-calls.md): No description found
+- [June 15, 2017 — Expanded Query & Performance for Business Data](https://docs.datafiniti.co/changelog/2017/expanded-query-capabilities-and-accelerated-data-delivery-comes-to-business-data.md): No description found
+- [2017 — New Product Prices View and CSV Improvements](https://docs.datafiniti.co/changelog/2017/new-view-for-prices-and-changes-to-csv-formats.md): No description found
+- [2017 — New Developer Documentation for JSON](https://docs.datafiniti.co/changelog/2017/new-json-code-examples-added.md): No description found
+- [February 6, 2017 — Product Data Elasticsearch Migration](https://docs.datafiniti.co/changelog/2017/expanded-query-capabilities-and-accelerated-data-delivery.md): No description found
+- [Early 2017 — Datafiniti API Developer Hub](https://docs.datafiniti.co/changelog/2017/welcome-to-datafiniti-api.md): No description found
+
+## v3.0
+
+- [Getting Started](https://docs.datafiniti.co/v3/docs/get-started.md): No description found
+- [Getting started with Business Data](https://docs.datafiniti.co/v3/docs/getting-started-with-business-data.md): No description found
+- [Business Data with Web Browser and CSV](https://docs.datafiniti.co/v3/docs/business-data-with-web-browser-csv.md): No description found
+- [Business Data with Postman and CSV](https://docs.datafiniti.co/v3/docs/business-data-with-postman-and-csv.md): No description found
+- [Business Data with cURL and CSV](https://docs.datafiniti.co/v3/docs/business-data-with-curl-and-csv.md): No description found
+- [Business Data with PHP and CSV](https://docs.datafiniti.co/v3/docs/business-data-with-php-and-csv.md): No description found
+- [Business Data with Node.js and CSV](https://docs.datafiniti.co/v3/docs/business-data-with-nodejs-and-csv.md): No description found
+- [Business Data with Python and CSV](https://docs.datafiniti.co/v3/docs/business-data-with-python-and-csv.md): No description found
+- [Business Data with Web Browser and JSON](https://docs.datafiniti.co/v3/docs/business-data-with-web-browser-and-json.md): No description found
+- [Business Data with Postman and JSON](https://docs.datafiniti.co/v3/docs/business-data-with-postman-and-json.md): No description found
+- [Business Data with cURL and JSON](https://docs.datafiniti.co/v3/docs/business-data-with-curl-and-json.md): No description found
+- [Business Data with PHP and JSON](https://docs.datafiniti.co/v3/docs/business-data-with-php-and-json.md): No description found
+- [Business Data with Node.js and JSON](https://docs.datafiniti.co/v3/docs/business-data-with-nodejs-and-json.md): No description found
+- [Business Data with Python and JSON](https://docs.datafiniti.co/v3/docs/business-data-with-python-and-json.md): No description found
+- [Business Data Schema](https://docs.datafiniti.co/v3/docs/business-data-schema.md): No description found
+- [Available Views for Business Data](https://docs.datafiniti.co/v3/docs/available-views-for-business-data.md): No description found
+- [businesses_all](https://docs.datafiniti.co/v3/docs/businesses_all.md): No description found
+- [businesses_all_menusFlat](https://docs.datafiniti.co/v3/docs/businesses_all_menusflat.md): No description found
+- [businesses_all_nested](https://docs.datafiniti.co/v3/docs/businesses_all_nested.md): No description found
+- [businesses_all_nested_no_reviews](https://docs.datafiniti.co/v3/docs/businesses_all_nested_no_reviews.md): No description found
+- [businesses_basic](https://docs.datafiniti.co/v3/docs/businesses_basic.md): No description found
+- [businesses_all_reviewsFlat](https://docs.datafiniti.co/v3/docs/businesses_all_reviewsflat.md): No description found
+- [Constructing Business Queries](https://docs.datafiniti.co/v3/docs/constructing-business-queries.md): No description found
+- [Getting started with People Data](https://docs.datafiniti.co/v3/docs/getting-started-with-people-data-1.md): No description found
+- [Getting Started with Product Data](https://docs.datafiniti.co/v3/docs/getting-started-with-product-data.md): No description found
+- [Product Data with Web Browser and CSV](https://docs.datafiniti.co/v3/docs/product-data-with-web-browser-csv.md): No description found
+- [Product Data with Postman and CSV](https://docs.datafiniti.co/v3/docs/product-data-with-postman-csv.md): No description found
+- [Product Data with cURL and CSV](https://docs.datafiniti.co/v3/docs/product-data-with-curl-csv.md): No description found
+- [Product Data with PHP and CSV](https://docs.datafiniti.co/v3/docs/product-data-with-php-csv.md): No description found
+- [Product Data with Node.js and CSV](https://docs.datafiniti.co/v3/docs/product-data-with-nodejs-csv.md): No description found
+- [Product Data with Python and CSV](https://docs.datafiniti.co/v3/docs/product-data-with-python-csv.md): No description found
+- [Product Data with Web Browser and JSON](https://docs.datafiniti.co/v3/docs/product-data-with-web-browser-and-json.md): No description found
+- [Product Data with Postman and JSON](https://docs.datafiniti.co/v3/docs/product-data-with-postman-and-json.md): No description found
+- [Product Data with cURL and JSON](https://docs.datafiniti.co/v3/docs/product-data-with-curl-and-json.md): No description found
+- [Product Data with PHP and JSON](https://docs.datafiniti.co/v3/docs/product-data-with-php-and-json.md): No description found
+- [Product Data with Node.js and JSON](https://docs.datafiniti.co/v3/docs/product-data-with-nodejs-json.md): No description found
+- [Product Data with Python and JSON](https://docs.datafiniti.co/v3/docs/product-data-with-python-and-json.md): No description found
+- [Product Data Schema](https://docs.datafiniti.co/v3/docs/product-data-schema.md): No description found
+- [Available Views for Product Data](https://docs.datafiniti.co/v3/docs/available-views-for-product-data.md): No description found
+- [products_all](https://docs.datafiniti.co/v3/docs/products_all.md): No description found
+- [products_basicFields](https://docs.datafiniti.co/v3/docs/products_basicfields.md): No description found
+- [products_keysSourceURLs](https://docs.datafiniti.co/v3/docs/products_keyssourceurls.md): No description found
+- [products_all_nested](https://docs.datafiniti.co/v3/docs/products_all_nested.md): No description found
+- [products_pricesFlat](https://docs.datafiniti.co/v3/docs/products_pricesflat.md): No description found
+- [products_reviewsFlat](https://docs.datafiniti.co/v3/docs/products_reviewsflat.md): No description found
+- [Constructing Product Queries](https://docs.datafiniti.co/v3/docs/constructing-product-queries.md): No description found
+- [Getting started with Property Data](https://docs.datafiniti.co/v3/docs/getting-started-with-property-data.md): No description found
+- [Property Data with Web Browser and CSV](https://docs.datafiniti.co/v3/docs/property-data-with-web-browser-and-csv.md): No description found
+- [Property Data with Postman and CSV](https://docs.datafiniti.co/v3/docs/property-data-with-postman-and-csv.md): No description found
+- [Property Data with cURL and CSV](https://docs.datafiniti.co/v3/docs/property-data-with-curl-and-csv.md): No description found
+- [Property Data with PHP and CSV](https://docs.datafiniti.co/v3/docs/property-data-with-php-and-csv.md): No description found
+- [Property Data with Node.js and CSV](https://docs.datafiniti.co/v3/docs/property-data-with-nodejs-and-csv.md): No description found
+- [Property Data with Python and CSV](https://docs.datafiniti.co/v3/docs/property-data-with-python-and-csv.md): No description found
+- [Property Data with Web Browser and JSON](https://docs.datafiniti.co/v3/docs/property-data-with-web-browser-and-json.md): No description found
+- [Property Data with Postman and JSON](https://docs.datafiniti.co/v3/docs/property-data-with-postman-and-json.md): No description found
+- [Property Data with cURL and JSON](https://docs.datafiniti.co/v3/docs/property-data-with-curl-and-json.md): No description found
+- [Property Data with PHP and JSON](https://docs.datafiniti.co/v3/docs/property-data-with-php-and-json.md): No description found
+- [Property Data with Node.js and JSON](https://docs.datafiniti.co/v3/docs/property-data-with-nodejs-and-json.md): No description found
+- [Property Data with Python and JSON](https://docs.datafiniti.co/v3/docs/property-data-with-python-and-json.md): No description found
+- [Property Data Schema](https://docs.datafiniti.co/v3/docs/property-data-schema.md): No description found
+- [Possible Values for Property Fields](https://docs.datafiniti.co/v3/docs/possible-values-for-property-fields.md): No description found
+- [Available Views for Property Data](https://docs.datafiniti.co/v3/docs/available-views-for-property-data.md): No description found
+- [properties_all](https://docs.datafiniti.co/v3/docs/properties_all.md): No description found
+- [properties_all_nested](https://docs.datafiniti.co/v3/docs/properties_all_nested.md): No description found
+- [Constructing Property Queries](https://docs.datafiniti.co/v3/docs/constructing-property-queries.md): No description found
+- [Reference Values for Property Schema](https://docs.datafiniti.co/v3/docs/reference-values-for-property-schema.md): No description found
+- [Using Postman](https://docs.datafiniti.co/v3/docs/using-postman.md): No description found
+- [Migrating from V3 to V4](https://docs.datafiniti.co/v3/docs/migrating-from-v3-to-v4.md): No description found
+- [data/businesses](https://docs.datafiniti.co/v3/reference/databusinesses.md): Search and download business data using the Datafiniti API v3.
+- [data/products](https://docs.datafiniti.co/v3/reference/data-products.md): Search and download product data using the Datafiniti API v3.
+- [requests](https://docs.datafiniti.co/v3/reference/requests.md): Monitor the status of your download requests.
+- [results](https://docs.datafiniti.co/v3/reference/results.md): Retrieve download file URLs for completed download requests.
+- [data/properties](https://docs.datafiniti.co/v3/reference/dataproperties.md): Search and download property data using the Datafiniti API v3.
+- [users](https://docs.datafiniti.co/v3/reference/users.md): View your Datafiniti account information and status.
+- [March 2026 — Profile Images & Developer Resources](https://docs.datafiniti.co/v3/changelog/2026/202603-data-release-log.md): No description found
+- [February 2026 — Property Data Schema Update](https://docs.datafiniti.co/v3/changelog/2026/202602-data-release-log.md): No description found
+- [January 2026 — 2026 Operating Priorities](https://docs.datafiniti.co/v3/changelog/2026/202601-data-release-log.md): No description found
+- [November 2025 — Property Pricing Updates](https://docs.datafiniti.co/v3/changelog/2025/202511-data-release-log.md): No description found
+- [October 2025 — New County Sources](https://docs.datafiniti.co/v3/changelog/2025/202510-data-release-log.md): No description found
+- [September 2025 — Commercial Property Fields](https://docs.datafiniti.co/v3/changelog/2025/202509-data-release-log.md): No description found
+- [August 2025 — Rental Status Improvements](https://docs.datafiniti.co/v3/changelog/2025/202508-data-release-log.md): No description found
+- [July 2025 — Broker & Property Fields](https://docs.datafiniti.co/v3/changelog/2025/202507-data-release-log.md): No description found
+- [June 2025 — People & Property Integration](https://docs.datafiniti.co/v3/changelog/2025/202506-data-release-log.md): No description found
+- [March 2025 — Parking & People Data](https://docs.datafiniti.co/v3/changelog/2025/202503-data-release-log.md): No description found
+- [February 2025 — Property Statuses & Schema](https://docs.datafiniti.co/v3/changelog/2025/202502-data-release-log.md): No description found
+- [November 2024 — Autotrace Launch & County Expansion](https://docs.datafiniti.co/v3/changelog/2024/202411-data-release-log.md): No description found
+- [September 2024 — Realtor License Types & Portal Search](https://docs.datafiniti.co/v3/changelog/2024/202409-data-release-log.md): No description found
+- [July 2024 — 1M+ New Properties & Rental Price Field](https://docs.datafiniti.co/v3/changelog/2024/202407-data-release-log.md): No description found
+- [April 2024 — County Assessor Expansion](https://docs.datafiniti.co/v3/changelog/2024/202404-data-release-log.md): No description found
+- [February 2024 — DR8 — Data Quality Improvements](https://docs.datafiniti.co/v3/changelog/2024/202402-data-release-log.md): No description found
+- [December 2023 — DR5 Live — Standardization & Floor Plans](https://docs.datafiniti.co/v3/changelog/2023/202312-data-release-log.md): No description found
+- [November 2023 — DR4 & DR5 — 31 New Property Fields](https://docs.datafiniti.co/v3/changelog/2023/202311-data-release-log.md): No description found
+- [October 2023 — Foreclosure Statuses & New Schema Fields](https://docs.datafiniti.co/v3/changelog/2023/202310-data-release-log.md): No description found
+- [September 2023 — Owner Data in People & County Expansion](https://docs.datafiniti.co/v3/changelog/2023/202309-data-release-log.md): No description found
+- [August 2023 — Broker License Linking & People Schema](https://docs.datafiniti.co/v3/changelog/2023/202308-data-release-log.md): No description found
+- [July 2023 — County/FIPS Fields & Portal Data Plans](https://docs.datafiniti.co/v3/changelog/2023/202307-data-release-log.md): No description found
+- [June 2023 — New Broker Source & Address Normalization](https://docs.datafiniti.co/v3/changelog/2023/202306-data-release-log.md): No description found
+- [May 2023 — Home Sale Transactions & New Website](https://docs.datafiniti.co/v3/changelog/2023/202305-data-release-log.md): No description found
+- [April 2023 — Commercial Property & Delisted Statuses](https://docs.datafiniti.co/v3/changelog/2023/202304-data-release-log.md): No description found
+- [February 2023 — Commercial RE People & Faster Refresh](https://docs.datafiniti.co/v3/changelog/2023/202302-data-release-log.md): No description found
+- [January 2023 — First County Crawler & People Import](https://docs.datafiniti.co/v3/changelog/2023/202301-data-release-log.md): No description found
+- [December 2022 — Commercial Property & Brand Normalization](https://docs.datafiniti.co/v3/changelog/2022/202212-data-release-log.md): No description found
+- [November 2022 — Broker License Numbers & Portal Filters](https://docs.datafiniti.co/v3/changelog/2022/202211-data-release-log.md): No description found
+- [September 2022 — Portal Views & Data Enrichment Beta](https://docs.datafiniti.co/v3/changelog/2022/20229-data-release-log.md): No description found
+- [August 2022 — Enhanced Rental Properties](https://docs.datafiniti.co/v3/changelog/2022/20228-data-release-log.md): No description found
+- [July 2022 — UK Property & Product Expansion](https://docs.datafiniti.co/v3/changelog/2022/20227-data-release-log.md): No description found
+- [June 2022 — mostRecent Product Fields & Broker Data](https://docs.datafiniti.co/v3/changelog/2022/20226-data-release-log.md): No description found
+- [March 2021 — Property Focus & Minor Updates](https://docs.datafiniti.co/v3/changelog/2021/20213-data-release-log.md): No description found
+- [February 2021 — Major Property Data Removal](https://docs.datafiniti.co/v3/changelog/2021/20212-data-release-log.md): No description found
+- [January 2021 — Property Performance Improvements](https://docs.datafiniti.co/v3/changelog/2021/20211-data-release-log.md): No description found
+- [December 2020 — Holiday Maintenance](https://docs.datafiniti.co/v3/changelog/2020/202012-data-release-log.md): No description found
+- [November 2020 — New People Fields & Product Sources](https://docs.datafiniti.co/v3/changelog/2020/202011-data-release-log.md): No description found
+- [October 2020 — Product Classification Complete](https://docs.datafiniti.co/v3/changelog/2020/202010-data-release-log.md): No description found
+- [September 2020 — Product Taxonomy Classification Underway](https://docs.datafiniti.co/v3/changelog/2020/20209-data-release-log.md): No description found
+- [August 2020 — Minor Updates](https://docs.datafiniti.co/v3/changelog/2020/20208-data-release-log.md): No description found
+- [July 2020 — New Pipelines & Classification Live](https://docs.datafiniti.co/v3/changelog/2020/20207-data-release-log.md): No description found
+- [April 2020 — Source Search Transition](https://docs.datafiniti.co/v3/changelog/2020/20204-data-release-log.md): No description found
+- [March 2020 — Steady Growth](https://docs.datafiniti.co/v3/changelog/2020/20203-data-release-log.md): No description found
+- [February 2020 — Erroneous Data Cleanup](https://docs.datafiniti.co/v3/changelog/2020/20202-data-release-log.md): No description found
+- [January 2020 — New Year Kickoff](https://docs.datafiniti.co/v3/changelog/2020/20201-data-release-log.md): No description found
+- [December 2019 — Holiday Maintenance Release](https://docs.datafiniti.co/v3/changelog/2019/201912-data-release-log.md): No description found
+- [November 2019 — Merging Logic Overhaul](https://docs.datafiniti.co/v3/changelog/2019/201911-data-release-log.md): No description found
+- [October 2019 — Database Tooling Overhaul Begins](https://docs.datafiniti.co/v3/changelog/2019/201910-data-release-log.md): No description found
+- [September 2019 — Property Schema Updates](https://docs.datafiniti.co/v3/changelog/2019/20199-data-release-log.md): No description found
+- [August 2019 — Schema Revisions](https://docs.datafiniti.co/v3/changelog/2019/20198-data-release-log.md): No description found
+- [July 2019 — Initial Release Log](https://docs.datafiniti.co/v3/changelog/2019/20197-data-release-log.md): No description found

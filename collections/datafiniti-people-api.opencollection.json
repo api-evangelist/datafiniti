@@ -1,0 +1,39 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Datafiniti Authentication People API",
+    "version": "4.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "People",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search people records",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.datafiniti.co/v4/people/search",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Search people records"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
