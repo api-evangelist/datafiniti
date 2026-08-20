@@ -69,6 +69,10 @@ apis:
   tags:
   - Listings
   - Property Data
+  - Real-Estate
+  tags_raw:
+  - Listings
+  - Property Data
   - Real Estate
   properties:
   - type: Documentation
@@ -132,6 +136,8 @@ apis:
   humanURL: https://docs.datafiniti.co/docs/api-introduction
   baseURL: https://api.datafiniti.co/v4
   tags:
+  - Product
+  tags_raw:
   - Products
   properties:
   - type: OpenAPI
