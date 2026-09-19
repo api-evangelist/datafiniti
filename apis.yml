@@ -120,6 +120,8 @@ apis:
   humanURL: https://docs.datafiniti.co/docs/api-introduction
   baseURL: https://api.datafiniti.co/v4
   tags:
+  - Business
+  tags_raw:
   - Businesses
   properties:
   - type: OpenAPI
