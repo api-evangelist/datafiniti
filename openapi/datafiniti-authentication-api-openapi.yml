@@ -1,4 +1,4 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
   title: Datafiniti Authentication API
   description: The Datafiniti API exposes Data-as-a-Service endpoints for searching and downloading business, product, property, and people datasets aggregated from the public web. Authentication uses bearer tokens issued by the /v4/auth endpoint.
