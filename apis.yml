@@ -81,11 +81,12 @@ apis:
   tags:
   - Listings
   - Property Data
-  - Real-Estate
+  - Real Estate
   tags_raw:
   - Listings
   - Property Data
   - Real Estate
+  - Real-Estate
   properties:
   - type: Documentation
     url: https://docs.datafiniti.co/docs/constructing-property-queries
