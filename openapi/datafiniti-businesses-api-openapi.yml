@@ -36,6 +36,22 @@ paths:
                 $ref: '#/components/schemas/SearchResponse'
 components:
   schemas:
+    SearchResponse:
+      type: object
+      properties:
+        num_found:
+          type: integer
+        num_records:
+          type: integer
+        records:
+          type: array
+          items:
+            type: object
+        download_id:
+          type: string
+        download_url:
+          type: string
+          format: uri
     SearchRequest:
       type: object
       required:
@@ -60,22 +76,6 @@ components:
         view:
           type: string
           description: Named view selecting a subset of fields.
-    SearchResponse:
-      type: object
-      properties:
-        num_found:
-          type: integer
-        num_records:
-          type: integer
-        records:
-          type: array
-          items:
-            type: object
-        download_id:
-          type: string
-        download_url:
-          type: string
-          format: uri
   securitySchemes:
     bearerAuth:
       type: http
