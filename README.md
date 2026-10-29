@@ -1,4 +1,4 @@
-# Datafiniti (datafiniti)
+# Datafiniti
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,139 +66,163 @@
 
 Datafiniti is a Data as a Service (DaaS) provider that collects, organizes, and standardizes large-scale data from the public web, delivering ready-to-use datasets for property, people, business, and product data through their API, web portal, and bulk downloads.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/datafiniti/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/datafiniti/refs/heads/main/apis.yml)
+**Areas:** Business Data · Data Aggregation · Data as a Service · People Data · Product Data · Property Data
 
-## Scope
+## Datafiniti on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Datafiniti is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/datafiniti/](https://apis.io/providers/datafiniti/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (9)
 
-- Business Data
-- Data Aggregation
-- Data as a Service
-- People Data
-- Product Data
-- Property Data
+- [Datafiniti Business Data API](https://apis.io/apis/datafiniti/business-data-api/) — Access a large catalog of business listings aggregated from hundreds of online directories and review websites, integrated with firmographics and reviews.…
+- [Datafiniti Product Data API](https://apis.io/apis/datafiniti/product-data-api/) — Access millions of product records spanning major retailers, brands, and categories including detailed product information, pricing data, and reviews. Over…
+- [Datafiniti Property Data API](https://apis.io/apis/datafiniti/property-data-api/) — Access a large catalog of real estate listings from dozens of websites, integrated with pricing data, amenities, and reviews. Over 205 million property…
+- [Datafiniti People Data API](https://apis.io/apis/datafiniti/people-data-api/) — Access people data records aggregated from public web sources. Over 4 million people records available.
+- [Datafiniti Authentication API](https://apis.io/apis/datafiniti/datafiniti-authentication-api/) — The Authentication API from Datafiniti — 1 operation(s) for authentication.
+- [Datafiniti Businesses API](https://apis.io/apis/datafiniti/datafiniti-businesses-api/) — The Businesses API from Datafiniti — 1 operation(s) for businesses.
+- [Datafiniti People API](https://apis.io/apis/datafiniti/datafiniti-people-api/) — The People API from Datafiniti — 1 operation(s) for people.
+- [Datafiniti Products API](https://apis.io/apis/datafiniti/datafiniti-products-api/) — The Products API from Datafiniti — 1 operation(s) for products.
+- [Datafiniti Properties API](https://apis.io/apis/datafiniti/datafiniti-properties-api/) — The Properties API from Datafiniti — 1 operation(s) for properties.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-26
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Datafiniti API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-Unified Datafiniti REST API exposing search and download endpoints for businesses, products, properties, and people datasets, plus the bearer token authentication endpoint.
+- [Datafiniti Agentic Access](https://apis.io/agentic-access/datafiniti/datafiniti-agentic-access/)
 
-- **Human URL:** [https://docs.datafiniti.co/docs/api-introduction](https://docs.datafiniti.co/docs/api-introduction)
-- **Base URL:** `https://api.datafiniti.co/v4`
+#### JSON Schema (5)
 
-#### Tags
+The data models the API reads and writes.
 
-- Authentication
-- Bulk Downloads
-- Search
+- [AuthRequest](https://apis.io/schemas/datafiniti/datafiniti-authrequest/)
+- [AuthResponse](https://apis.io/schemas/datafiniti/datafiniti-authresponse/)
+- [SearchRequest](https://apis.io/schemas/datafiniti/datafiniti-searchrequest/)
+- [SearchResponse](https://apis.io/schemas/datafiniti/datafiniti-searchresponse/)
+- [Datafiniti Search Request](https://apis.io/schemas/datafiniti/search-request/)
 
-#### Properties
+#### JSON Structure (1)
 
-- [Documentation](https://docs.datafiniti.co/docs/api-introduction)
-- [OpenAPI](openapi/datafiniti-api.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/datafiniti-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/datafiniti-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [JSON Schema](json-schema/search-request.json) — [JSON Schema](https://json-schema.org/specification)
+Data models expressed in JSON Structure.
 
-### Datafiniti Business Data API
+- [Datafiniti Structure](https://apis.io/json-structure/datafiniti/datafiniti-structure/)
 
-Access a large catalog of business listings aggregated from hundreds of online directories and review websites, integrated with firmographics and reviews. Over 131 million business records available.
+#### JSON-LD (1)
 
-- **Human URL:** [https://www.datafiniti.co/data/business-data](https://www.datafiniti.co/data/business-data)
+Linked-data contexts for the provider's vocabulary.
 
-#### Tags
+- [Datafiniti Context](https://apis.io/jsonld/datafiniti/datafiniti-context/)
 
-- Business Data
-- Business Listings
-- Firmographics
+#### Vocabulary (1)
 
-#### Properties
+The provider's domain terms, defined.
 
-- [Documentation](https://developer.datafiniti.co)
-- [Postman Collection](collections/datafiniti-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/datafiniti-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Datafiniti Vocabulary](https://apis.io/vocabularies/datafiniti/datafiniti-vocabulary/)
 
-### Datafiniti Product Data API
+#### Collections (6)
 
-Access millions of product records spanning major retailers, brands, and categories including detailed product information, pricing data, and reviews. Over 506 million product records available.
+Postman and Open Collection request collections.
 
-- **Human URL:** [https://www.datafiniti.co/data/product-data](https://www.datafiniti.co/data/product-data)
+- [Datafiniti API](https://apis.io/collections/datafiniti/open-datafiniti-api/)
+- [Datafiniti Authentication API](https://apis.io/collections/datafiniti/open-datafiniti-authentication-api/)
+- [Datafiniti Authentication Businesses API](https://apis.io/collections/datafiniti/open-datafiniti-businesses-api/)
+- [Datafiniti Authentication People API](https://apis.io/collections/datafiniti/open-datafiniti-people-api/)
+- [Datafiniti Authentication Products API](https://apis.io/collections/datafiniti/open-datafiniti-products-api/)
+- [Datafiniti Authentication Properties API](https://apis.io/collections/datafiniti/open-datafiniti-properties-api/)
 
-#### Tags
+#### Governance rules (2)
 
-- E-Commerce
-- Pricing Data
-- Product Data
+Spectral rulesets for the provider's contracts.
 
-#### Properties
+- [Datafiniti — jsonschema rules](https://apis.io/rules/datafiniti/datafiniti-jsonschema-spectral-rules/)
+- [Datafiniti API Rules](https://apis.io/rules/datafiniti/datafiniti-rules/)
 
-- [Documentation](https://developer.datafiniti.co/docs/getting-started-with-product-data)
-- [Postman Collection](collections/datafiniti-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/datafiniti-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### Security (2)
 
-### Datafiniti Property Data API
+Authentication, trust centre, and vulnerability disclosure.
 
-Access a large catalog of real estate listings from dozens of websites, integrated with pricing data, amenities, and reviews. Over 205 million property records available.
+- [Datafiniti Authentication](https://apis.io/security/datafiniti/datafiniti-authentication/)
+- [Datafiniti Domain Security](https://apis.io/security/datafiniti/datafiniti-domain-security/)
 
-- **Human URL:** [https://www.datafiniti.co/data/property-data](https://www.datafiniti.co/data/property-data)
+#### Plans and pricing (1)
 
-#### Tags
+Published plans, tiers and prices.
 
-- Listings
-- Property Data
-- Real Estate
+- [Datafiniti Plans Pricing](https://apis.io/plans/datafiniti/datafiniti-plans-pricing/)
 
-#### Properties
+#### Rate limits (1)
 
-- [Documentation](https://docs.datafiniti.co/docs/constructing-property-queries)
-- [Postman Collection](collections/datafiniti-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/datafiniti-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Published request limits.
 
-### Datafiniti People Data API
+- [Datafiniti Rate Limits](https://apis.io/rate-limits/datafiniti/datafiniti-rate-limits/)
 
-Access people data records aggregated from public web sources. Over 4 million people records available.
+#### FinOps (1)
 
-- **Human URL:** [https://www.datafiniti.co/data/people-data](https://www.datafiniti.co/data/people-data)
+What the API costs to run, by operation.
 
-#### Tags
+- [Datafiniti Finops](https://apis.io/finops/datafiniti/datafiniti-finops/)
 
-- Contact Data
-- People Data
+## Where to find this API
 
-#### Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- [Documentation](https://developer.datafiniti.co)
-- [Postman Collection](collections/datafiniti-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/datafiniti-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [GitHub Organization](https://github.com/datafiniti)
-- [LinkedIn](https://www.linkedin.com/company/datafiniti)
 - [Website](https://www.datafiniti.co)
 - [Documentation](https://docs.datafiniti.co/docs/api-introduction)
-- [Developer  Portal](https://developer.datafiniti.co)
-- [Sign Up](https://portal.datafiniti.co/sign-up)
-- [Login](https://portal.datafiniti.co)
-- [Blog](https://blog.datafiniti.co)
-- [JSON-LD](json-ld/datafiniti-context.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Vocabulary](vocabulary/datafiniti-vocabulary.yml)
-- [Capabilities](capabilities/datafiniti-capabilities.yml)
-- [Rules](rules/datafiniti-rules.yml)
-- [L L Ms Txt](https://docs.datafiniti.co/llms.txt)
+- [Blog](https://www.datafiniti.co/blog)
+- [GitHub](https://github.com/datafiniti)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 32.1** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 53.9 |
+| Contract governance | 27.3 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 27.4 |
+| Access clarity | 14.5 |
+
+**Agent readiness 17.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/datafiniti/](https://apis.io/providers/datafiniti/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Datafiniti: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/datafiniti/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
